@@ -17,9 +17,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class ItemController {
     @Autowired
     private ItemService itemService;
+
     @RequestMapping("/item/{itemId}")
     @ResponseBody
-    public TbItem getItemById(@PathVariable Long itemId){
+    public TbItem getItemById(@PathVariable Long itemId) {
         TbItem tbItem = itemService.geiItemById(itemId);
         return tbItem;
     }

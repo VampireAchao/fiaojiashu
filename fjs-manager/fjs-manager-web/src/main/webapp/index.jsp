@@ -12,5 +12,6 @@
 </head>
 <body>
 <h1>hello 覅甲蔬商城</h1>
+<%--tomcat7:run--%>
 </body>
 </html>
