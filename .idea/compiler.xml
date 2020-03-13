@@ -10,15 +10,18 @@
         <module name="fjscommon" />
         <module name="fjsmanagerpojo" />
         <module name="fjsmanagerweb" />
-        <module name="fjs-manager-web" />
+        <module name="fjsmanagerinterface" />
         <module name="fjs-common" />
         <module name="fjsmanagerdao" />
         <module name="fjs-manager-pojo" />
-        <module name="fjsmanagerinterface" />
+        <module name="fjs-manager-web" />
         <module name="fjs-manager-interface" />
         <module name="fjs-manager-dao" />
         <module name="fjsmanagerservice" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="fjsparent" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

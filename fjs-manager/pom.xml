@@ -20,12 +20,10 @@
         </dependency>
     </dependencies>
     <modules>
-
         <module>fjs-manager-dao</module>
         <module>fjs-manager-pojo</module>
         <module>fjs-manager-interface</module>
         <module>fjs-manager-service</module>
-        <module>fjs-manager-web</module>
     </modules>
     <!--配置tomcat插件-->
     <build>
