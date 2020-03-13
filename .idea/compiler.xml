@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="fjsmanagerservice" />
+        <module name="fjscommon" />
+        <module name="fjsmanagerpojo" />
+        <module name="fjsmanagerinterface" />
+        <module name="fjsmanagerdao" />
+        <module name="fjsmanagerweb" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

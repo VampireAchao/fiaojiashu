@@ -1,0 +1,11 @@
+cn\fiaojiashu\mapper\TbItemDescMapper.class
+cn\fiaojiashu\mapper\TbItemCatMapper.class
+cn\fiaojiashu\mapper\TbOrderItemMapper.class
+cn\fiaojiashu\mapper\TbOrderShippingMapper.class
+cn\fiaojiashu\mapper\TbOrderMapper.class
+cn\fiaojiashu\mapper\TbItemParamMapper.class
+cn\fiaojiashu\mapper\TbUserMapper.class
+cn\fiaojiashu\mapper\TbItemMapper.class
+cn\fiaojiashu\mapper\TbItemParamItemMapper.class
+cn\fiaojiashu\mapper\TbContentMapper.class
+cn\fiaojiashu\mapper\TbContentCategoryMapper.class

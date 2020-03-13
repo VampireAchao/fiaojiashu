@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>cn.fiaojiashu</groupId>
+        <artifactId>fjs-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <groupId>cn.fiaojiashu</groupId>
+    <artifactId>fjs-manager</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>cn.fiaojiashu</groupId>
+            <artifactId>fjs-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+    <modules>
+
+        <module>fjs-manager-dao</module>
+        <module>fjs-manager-pojo</module>
+        <module>fjs-manager-interface</module>
+        <module>fjs-manager-service</module>
+        <module>fjs-manager-web</module>
+    </modules>
+    <!--配置tomcat插件-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <configuration>
+                    <path>/</path>
+                    <port>8080</port>
+                    <!--log4j配置文件位置-->
+                    <systemProperties>
+                        <log4j.configuration>file:src/main/resources/conf/log4j.properties</log4j.configuration>
+                    </systemProperties>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
