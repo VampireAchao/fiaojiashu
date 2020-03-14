@@ -46,3 +46,64 @@
 2020-03-14 17:01:14,174 [DubboServerHandler-192.168.43.201:20880-thread-13] INFO  com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol-  [DUBBO] disconected from /192.168.43.201:64439,url:dubbo://192.168.43.201:20880/cn.fiaojiashu.service.ItemService?anyhost=true&application=fjs-manager&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.fiaojiashu.service.ItemService&methods=geiItemById,getItemList&pid=18056&side=provider&timeout=600000&timestamp=1584176356489, dubbo version: 2.5.3, current host: 127.0.0.1
 2020-03-14 17:04:25,724 [New I/O worker #4] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer-  [DUBBO] All clients has discontected from /192.168.43.201:20880. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
 2020-03-14 17:04:25,726 [DubboServerHandler-192.168.43.201:20880-thread-19] INFO  com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol-  [DUBBO] disconected from /192.168.43.201:64529,url:dubbo://192.168.43.201:20880/cn.fiaojiashu.service.ItemService?anyhost=true&application=fjs-manager&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.fiaojiashu.service.ItemService&methods=geiItemById,getItemList&pid=18056&side=provider&timeout=600000&timestamp=1584176356489, dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-14 17:59:47,405 [localhost-startStop-1-SendThread(192.168.43.211:2181)] WARN  org.apache.zookeeper.ClientCnxn- Client session timed out, have not heard from server in 20000ms for sessionid 0x170d32ba30d002a
+2020-03-14 17:59:47,433 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Client session timed out, have not heard from server in 20000ms for sessionid 0x170d32ba30d002a, closing socket connection and attempting reconnect
+2020-03-14 17:59:47,558 [localhost-startStop-1-EventThread] INFO  org.I0Itec.zkclient.ZkClient- zookeeper state changed (Disconnected)
+2020-03-14 17:59:48,695 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Opening socket connection to server 192.168.43.211/192.168.43.211:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-03-14 17:59:55,710 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Socket connection established to 192.168.43.211/192.168.43.211:2181, initiating session
+2020-03-14 17:59:55,857 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Session establishment complete on server 192.168.43.211/192.168.43.211:2181, sessionid = 0x170d32ba30d002a, negotiated timeout = 30000
+2020-03-14 17:59:55,858 [localhost-startStop-1-EventThread] INFO  org.I0Itec.zkclient.ZkClient- zookeeper state changed (SyncConnected)
+2020-03-14 18:00:38,659 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Unable to read additional data from server sessionid 0x170d32ba30d002a, likely server has closed socket, closing socket connection and attempting reconnect
+2020-03-14 18:00:38,761 [localhost-startStop-1-EventThread] INFO  org.I0Itec.zkclient.ZkClient- zookeeper state changed (Disconnected)
+2020-03-14 18:00:40,596 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Opening socket connection to server 192.168.43.211/192.168.43.211:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-03-14 18:00:59,660 [localhost-startStop-1-SendThread(192.168.43.211:2181)] WARN  org.apache.zookeeper.ClientCnxn- Session 0x170d32ba30d002a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-03-14 18:01:01,035 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Opening socket connection to server 192.168.43.211/192.168.43.211:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-03-14 18:01:18,490 [localhost-startStop-1-SendThread(192.168.43.211:2181)] WARN  org.apache.zookeeper.ClientCnxn- Session 0x170d32ba30d002a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.SocketException: Network is unreachable: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-03-14 18:01:20,584 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Opening socket connection to server 192.168.43.211/192.168.43.211:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-03-14 18:01:41,587 [localhost-startStop-1-SendThread(192.168.43.211:2181)] WARN  org.apache.zookeeper.ClientCnxn- Session 0x170d32ba30d002a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-03-14 18:01:43,526 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Opening socket connection to server 192.168.43.211/192.168.43.211:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-03-14 18:02:04,531 [localhost-startStop-1-SendThread(192.168.43.211:2181)] WARN  org.apache.zookeeper.ClientCnxn- Session 0x170d32ba30d002a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-03-14 18:02:06,313 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Opening socket connection to server 192.168.43.211/192.168.43.211:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-03-14 18:02:27,316 [localhost-startStop-1-SendThread(192.168.43.211:2181)] WARN  org.apache.zookeeper.ClientCnxn- Session 0x170d32ba30d002a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-03-14 18:02:28,570 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Opening socket connection to server 192.168.43.211/192.168.43.211:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-03-14 18:02:49,583 [localhost-startStop-1-SendThread(192.168.43.211:2181)] WARN  org.apache.zookeeper.ClientCnxn- Session 0x170d32ba30d002a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-03-14 18:02:50,727 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Opening socket connection to server 192.168.43.211/192.168.43.211:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-03-14 18:03:11,730 [localhost-startStop-1-SendThread(192.168.43.211:2181)] WARN  org.apache.zookeeper.ClientCnxn- Session 0x170d32ba30d002a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-03-14 18:03:13,473 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Opening socket connection to server 192.168.43.211/192.168.43.211:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-03-14 18:03:26,514 [New I/O worker #5] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer-  [DUBBO] All clients has discontected from /192.168.43.201:20880. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-14 18:03:26,517 [DubboServerHandler-192.168.43.201:20880-thread-23] INFO  com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol-  [DUBBO] disconected from /192.168.43.201:64957,url:dubbo://192.168.43.201:20880/cn.fiaojiashu.service.ItemService?anyhost=true&application=fjs-manager&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.fiaojiashu.service.ItemService&methods=geiItemById,getItemList&pid=18056&side=provider&timeout=600000&timestamp=1584176356489, dubbo version: 2.5.3, current host: 127.0.0.1
