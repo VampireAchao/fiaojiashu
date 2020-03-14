@@ -1,5 +1,6 @@
 package cn.fiaojiashu.service;
 
+import cn.fiaojiashu.common.pojo.EasyUIDataGridResult;
 import cn.fiaojiashu.pojo.TbItem;
 
 /**
@@ -8,5 +9,8 @@ import cn.fiaojiashu.pojo.TbItem;
  * @Description:
  */
 public interface ItemService {
+
     TbItem geiItemById(long itemId);
+
+    EasyUIDataGridResult getItemList(int page, int rows);
 }

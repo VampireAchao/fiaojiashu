@@ -7,9 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="fjs-manager-service" />
+        <module name="fjsmanagerservice" />
         <module name="fjscommon" />
         <module name="fjsmanagerpojo" />
-        <module name="fjsmanagerweb" />
         <module name="fjsmanagerinterface" />
         <module name="fjs-common" />
         <module name="fjsmanagerdao" />
@@ -17,11 +17,8 @@
         <module name="fjs-manager-web" />
         <module name="fjs-manager-interface" />
         <module name="fjs-manager-dao" />
-        <module name="fjsmanagerservice" />
+        <module name="fjsmanagerweb" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="fjsparent" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>
