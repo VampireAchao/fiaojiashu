@@ -21,7 +21,7 @@
 <body class="easyui-layout">
     <!-- 头部标题 -->
 	<div data-options="region:'north',border:false" style="height:60px; padding:5px; background:#F3F3F3"> 
-		<span class="northTitle">覅甲蔬商城后台管理系统</span>
+		<span class="northTitle">覅甲蜀商城后台管理系统</span>
 	    <span class="loginInfo">登录用户：admin&nbsp;&nbsp;姓名：管理员&nbsp;&nbsp;角色：系统管理员</span>
 	</div>
     <div data-options="region:'west',title:'菜单',split:true" style="width:180px;">

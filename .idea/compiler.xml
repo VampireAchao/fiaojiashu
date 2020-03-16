@@ -20,5 +20,9 @@
         <module name="fjsmanagerweb" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="fastdfs_client" target="1.5" />
+      <module name="fjsparent" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

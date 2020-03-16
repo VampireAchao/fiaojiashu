@@ -8,9 +8,9 @@ import java.io.Serializable;
  * @Description:商品分类的pojo
  */
 public class EasyUITreeNode implements Serializable {
-    private long id;
-    private String text;
-    private String state;
+    private long id;            //分类id
+    private String text;        //分类
+    private String state;       //分类状态(父类?"closed":"open")
 
     public long getId() {
         return id;
