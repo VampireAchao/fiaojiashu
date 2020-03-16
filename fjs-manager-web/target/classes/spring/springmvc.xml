@@ -23,5 +23,6 @@
     <dubbo:application name="fjs-manager-web"/>
     <dubbo:registry protocol="zookeeper" address="192.168.43.211:2181"/>
     <dubbo:reference interface="cn.fiaojiashu.service.ItemService" id="itemService"/>
+    <dubbo:reference interface="cn.fiaojiashu.service.ItemCatService" id="itemCatService"/>
 
 </beans>

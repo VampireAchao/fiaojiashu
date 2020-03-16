@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 /**
  * @ClassName: ItemController
  * @Date: 2020/3/12 08:51
- * @Description:
+ * @Description:商品Controller
  */
 @Controller
 public class ItemController {
