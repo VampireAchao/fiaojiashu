@@ -1,101 +1,331 @@
-2020-03-16 23:47:42,642 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization started
-2020-03-16 23:47:42,745 [localhost-startStop-1] INFO  org.springframework.web.context.support.XmlWebApplicationContext- Refreshing Root WebApplicationContext: startup date [Mon Mar 16 23:47:42 CST 2020]; root of context hierarchy
-2020-03-16 23:47:42,796 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader- Loading XML bean definitions from file [C:\Users\1\IdeaProjects\fiaojiashu\fjs-manager\fjs-manager-service\target\classes\spring\applicationContext-dao.xml]
-2020-03-16 23:47:42,922 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader- Loading XML bean definitions from file [C:\Users\1\IdeaProjects\fiaojiashu\fjs-manager\fjs-manager-service\target\classes\spring\applicationContext-service.xml]
-2020-03-16 23:47:43,040 [localhost-startStop-1] INFO  com.alibaba.dubbo.common.logger.LoggerFactory- using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
-2020-03-16 23:47:43,071 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader- Loading XML bean definitions from file [C:\Users\1\IdeaProjects\fiaojiashu\fjs-manager\fjs-manager-service\target\classes\spring\applicationContext-trans.xml]
-2020-03-16 23:47:43,287 [localhost-startStop-1] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer- Loading properties file from class path resource [conf/db.properties]
-2020-03-16 23:47:43,296 [localhost-startStop-1] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2020-03-16 23:47:44,643 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.AbstractConfig-  [DUBBO] The service ready on spring started. service: cn.fiaojiashu.service.ItemService, dubbo version: 2.5.3, current host: 127.0.0.1
-2020-03-16 23:47:44,758 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.AbstractConfig-  [DUBBO] Export dubbo service cn.fiaojiashu.service.ItemService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
-2020-03-16 23:47:44,758 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.AbstractConfig-  [DUBBO] Export dubbo service cn.fiaojiashu.service.ItemService to url dubbo://192.168.43.201:20880/cn.fiaojiashu.service.ItemService?anyhost=true&application=fjs-manager&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemService&methods=getItemList,geiItemById,addItem&pid=10912&side=provider&timeout=600000&timestamp=1584373664669, dubbo version: 2.5.3, current host: 127.0.0.1
-2020-03-16 23:47:44,758 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.AbstractConfig-  [DUBBO] Register dubbo service cn.fiaojiashu.service.ItemService url dubbo://192.168.43.201:20880/cn.fiaojiashu.service.ItemService?anyhost=true&application=fjs-manager&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemService&methods=getItemList,geiItemById,addItem&pid=10912&side=provider&timeout=600000&timestamp=1584373664669 to registry registry://192.168.43.211:2181/com.alibaba.dubbo.registry.RegistryService?application=fjs-manager&dubbo=2.5.3&pid=10912&registry=zookeeper&timestamp=1584373664650, dubbo version: 2.5.3, current host: 127.0.0.1
-2020-03-16 23:47:45,096 [localhost-startStop-1] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer-  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.43.201:20880, dubbo version: 2.5.3, current host: 127.0.0.1
-2020-03-16 23:47:45,136 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Load registry store file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, data: {cn.fiaojiashu.service.ItemCatService=empty://192.168.43.201/cn.fiaojiashu.service.ItemCatService?application=fjs-manager-web&category=configurators&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemCatService&methods=getItemCatList&pid=1496&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1584373373039 empty://192.168.43.201/cn.fiaojiashu.service.ItemCatService?application=fjs-manager-web&category=routers&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemCatService&methods=getItemCatList&pid=1496&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1584373373039 dubbo://192.168.43.201:20880/cn.fiaojiashu.service.ItemCatService?anyhost=true&application=fjs-manager&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemCatService&methods=getItemCatList&pid=10388&side=provider&timeout=600000&timestamp=1584373327229, cn.fiaojiashu.service.ItemService=empty://192.168.43.201/cn.fiaojiashu.service.ItemService?application=fjs-manager-web&category=configurators&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemService&methods=getItemList,geiItemById,addItem&pid=1496&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1584373373125 empty://192.168.43.201/cn.fiaojiashu.service.ItemService?application=fjs-manager-web&category=routers&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemService&methods=getItemList,geiItemById,addItem&pid=1496&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1584373373125 dubbo://192.168.43.201:20880/cn.fiaojiashu.service.ItemService?anyhost=true&application=fjs-manager&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemService&methods=addItem,geiItemById,getItemList&pid=10388&side=provider&timeout=600000&timestamp=1584373326411}, dubbo version: 2.5.3, current host: 127.0.0.1
-2020-03-16 23:47:45,223 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
-2020-03-16 23:47:45,223 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:host.name=DESKTOP-OEB8RPA.mshome.net
-2020-03-16 23:47:45,224 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:java.version=1.8.0_191
-2020-03-16 23:47:45,224 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:java.vendor=Oracle Corporation
-2020-03-16 23:47:45,224 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:java.home=C:\Program Files\Java\jdk1.8.0_191\jre
-2020-03-16 23:47:45,224 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:java.class.path=C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\lib\idea_rt.jar
-2020-03-16 23:47:45,224 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Program Files\Java\jdk1.8.0_191\jre\bin;"D:\winwxy\apache-tomcat-8.5.34-windows-x64\bin;D:\winwxy\apache-tomcat-8.5.34-windows-x64\lib";C:\Program Files\MySQL\MySQL Server 5.0\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\hadoop\hadoop-2.8.5\bin;D:\Program Files\Git\cmd;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseGit\bin;C:\Users\1\AppData\Local\Microsoft\WindowsApps;;.
-2020-03-16 23:47:45,224 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:java.io.tmpdir=C:\Users\1\AppData\Local\Temp\
-2020-03-16 23:47:45,224 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:java.compiler=<NA>
-2020-03-16 23:47:45,224 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:os.name=Windows 10
-2020-03-16 23:47:45,224 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:os.arch=amd64
-2020-03-16 23:47:45,224 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:os.version=10.0
-2020-03-16 23:47:45,224 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:user.name=1
-2020-03-16 23:47:45,224 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:user.home=C:\Users\1
-2020-03-16 23:47:45,224 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:user.dir=C:\Users\1\IdeaProjects\fiaojiashu\fjs-manager
-2020-03-16 23:47:45,226 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Initiating client connection, connectString=192.168.43.211:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@5a9b9139
-2020-03-16 23:47:45,651 [ZkClient-EventThread-26-192.168.43.211:2181] INFO  org.I0Itec.zkclient.ZkEventThread- Starting ZkClient event thread.
-2020-03-16 23:47:45,664 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Opening socket connection to server 192.168.43.211/192.168.43.211:2181. Will not attempt to authenticate using SASL (unknown error)
-2020-03-16 23:47:45,665 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Socket connection established to 192.168.43.211/192.168.43.211:2181, initiating session
-2020-03-16 23:47:45,677 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Session establishment complete on server 192.168.43.211/192.168.43.211:2181, sessionid = 0x170de99fffb0012, negotiated timeout = 30000
-2020-03-16 23:47:45,679 [localhost-startStop-1-EventThread] INFO  org.I0Itec.zkclient.ZkClient- zookeeper state changed (SyncConnected)
-2020-03-16 23:47:45,680 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Register: dubbo://192.168.43.201:20880/cn.fiaojiashu.service.ItemService?anyhost=true&application=fjs-manager&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemService&methods=getItemList,geiItemById,addItem&pid=10912&side=provider&timeout=600000&timestamp=1584373664669, dubbo version: 2.5.3, current host: 127.0.0.1
-2020-03-16 23:47:45,914 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Subscribe: provider://192.168.43.201:20880/cn.fiaojiashu.service.ItemService?anyhost=true&application=fjs-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemService&methods=getItemList,geiItemById,addItem&pid=10912&side=provider&timeout=600000&timestamp=1584373664669, dubbo version: 2.5.3, current host: 127.0.0.1
-2020-03-16 23:47:45,977 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Notify urls for subscribe url provider://192.168.43.201:20880/cn.fiaojiashu.service.ItemService?anyhost=true&application=fjs-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemService&methods=getItemList,geiItemById,addItem&pid=10912&side=provider&timeout=600000&timestamp=1584373664669, urls: [empty://192.168.43.201:20880/cn.fiaojiashu.service.ItemService?anyhost=true&application=fjs-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemService&methods=getItemList,geiItemById,addItem&pid=10912&side=provider&timeout=600000&timestamp=1584373664669], dubbo version: 2.5.3, current host: 127.0.0.1
-2020-03-16 23:47:46,499 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.AbstractConfig-  [DUBBO] The service ready on spring started. service: cn.fiaojiashu.service.ItemCatService, dubbo version: 2.5.3, current host: 127.0.0.1
-2020-03-16 23:47:46,522 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.AbstractConfig-  [DUBBO] Export dubbo service cn.fiaojiashu.service.ItemCatService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
-2020-03-16 23:47:46,523 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.AbstractConfig-  [DUBBO] Export dubbo service cn.fiaojiashu.service.ItemCatService to url dubbo://192.168.43.201:20880/cn.fiaojiashu.service.ItemCatService?anyhost=true&application=fjs-manager&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemCatService&methods=getItemCatList&pid=10912&side=provider&timeout=600000&timestamp=1584373666504, dubbo version: 2.5.3, current host: 127.0.0.1
-2020-03-16 23:47:46,523 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.AbstractConfig-  [DUBBO] Register dubbo service cn.fiaojiashu.service.ItemCatService url dubbo://192.168.43.201:20880/cn.fiaojiashu.service.ItemCatService?anyhost=true&application=fjs-manager&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemCatService&methods=getItemCatList&pid=10912&side=provider&timeout=600000&timestamp=1584373666504 to registry registry://192.168.43.211:2181/com.alibaba.dubbo.registry.RegistryService?application=fjs-manager&dubbo=2.5.3&pid=10912&registry=zookeeper&timestamp=1584373666502, dubbo version: 2.5.3, current host: 127.0.0.1
-2020-03-16 23:47:46,523 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Register: dubbo://192.168.43.201:20880/cn.fiaojiashu.service.ItemCatService?anyhost=true&application=fjs-manager&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemCatService&methods=getItemCatList&pid=10912&side=provider&timeout=600000&timestamp=1584373666504, dubbo version: 2.5.3, current host: 127.0.0.1
-2020-03-16 23:47:46,548 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Subscribe: provider://192.168.43.201:20880/cn.fiaojiashu.service.ItemCatService?anyhost=true&application=fjs-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemCatService&methods=getItemCatList&pid=10912&side=provider&timeout=600000&timestamp=1584373666504, dubbo version: 2.5.3, current host: 127.0.0.1
-2020-03-16 23:47:46,573 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Notify urls for subscribe url provider://192.168.43.201:20880/cn.fiaojiashu.service.ItemCatService?anyhost=true&application=fjs-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemCatService&methods=getItemCatList&pid=10912&side=provider&timeout=600000&timestamp=1584373666504, urls: [empty://192.168.43.201:20880/cn.fiaojiashu.service.ItemCatService?anyhost=true&application=fjs-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemCatService&methods=getItemCatList&pid=10912&side=provider&timeout=600000&timestamp=1584373666504], dubbo version: 2.5.3, current host: 127.0.0.1
-2020-03-16 23:47:46,578 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 3935 ms
-2020-03-16 23:48:20,456 [DubboServerHandler-192.168.43.201:20880-thread-2] INFO  com.alibaba.druid.pool.DruidDataSource- {dataSource-1} inited
-2020-03-16 23:54:59,836 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Unable to read additional data from server sessionid 0x170de99fffb0012, likely server has closed socket, closing socket connection and attempting reconnect
-2020-03-16 23:54:59,938 [localhost-startStop-1-EventThread] INFO  org.I0Itec.zkclient.ZkClient- zookeeper state changed (Disconnected)
-2020-03-16 23:55:01,524 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Opening socket connection to server 192.168.43.211/192.168.43.211:2181. Will not attempt to authenticate using SASL (unknown error)
-2020-03-16 23:55:17,029 [localhost-startStop-1-SendThread(192.168.43.211:2181)] WARN  org.apache.zookeeper.ClientCnxn- Session 0x170de99fffb0012 for server null, unexpected error, closing socket connection and attempting reconnect
-java.net.ConnectException: Connection timed out: no further information
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
-	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
-2020-03-16 23:55:18,609 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Opening socket connection to server 192.168.43.211/192.168.43.211:2181. Will not attempt to authenticate using SASL (unknown error)
-2020-03-16 23:55:39,612 [localhost-startStop-1-SendThread(192.168.43.211:2181)] WARN  org.apache.zookeeper.ClientCnxn- Session 0x170de99fffb0012 for server null, unexpected error, closing socket connection and attempting reconnect
-java.net.ConnectException: Connection timed out: no further information
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
-	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
-2020-03-16 23:55:40,722 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Opening socket connection to server 192.168.43.211/192.168.43.211:2181. Will not attempt to authenticate using SASL (unknown error)
-2020-03-16 23:56:01,732 [localhost-startStop-1-SendThread(192.168.43.211:2181)] WARN  org.apache.zookeeper.ClientCnxn- Session 0x170de99fffb0012 for server null, unexpected error, closing socket connection and attempting reconnect
-java.net.ConnectException: Connection timed out: no further information
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
-	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
-2020-03-16 23:56:02,847 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Opening socket connection to server 192.168.43.211/192.168.43.211:2181. Will not attempt to authenticate using SASL (unknown error)
-2020-03-16 23:56:23,850 [localhost-startStop-1-SendThread(192.168.43.211:2181)] WARN  org.apache.zookeeper.ClientCnxn- Session 0x170de99fffb0012 for server null, unexpected error, closing socket connection and attempting reconnect
-java.net.ConnectException: Connection timed out: no further information
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
-	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
-2020-03-16 23:56:25,803 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Opening socket connection to server 192.168.43.211/192.168.43.211:2181. Will not attempt to authenticate using SASL (unknown error)
-2020-03-16 23:56:46,806 [localhost-startStop-1-SendThread(192.168.43.211:2181)] WARN  org.apache.zookeeper.ClientCnxn- Session 0x170de99fffb0012 for server null, unexpected error, closing socket connection and attempting reconnect
-java.net.ConnectException: Connection timed out: no further information
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
-	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
-2020-03-16 23:56:48,358 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Opening socket connection to server 192.168.43.211/192.168.43.211:2181. Will not attempt to authenticate using SASL (unknown error)
-2020-03-16 23:57:09,361 [localhost-startStop-1-SendThread(192.168.43.211:2181)] WARN  org.apache.zookeeper.ClientCnxn- Session 0x170de99fffb0012 for server null, unexpected error, closing socket connection and attempting reconnect
-java.net.ConnectException: Connection timed out: no further information
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
-	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
-2020-03-16 23:57:11,070 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Opening socket connection to server 192.168.43.211/192.168.43.211:2181. Will not attempt to authenticate using SASL (unknown error)
-2020-03-16 23:57:32,077 [localhost-startStop-1-SendThread(192.168.43.211:2181)] WARN  org.apache.zookeeper.ClientCnxn- Session 0x170de99fffb0012 for server null, unexpected error, closing socket connection and attempting reconnect
-java.net.ConnectException: Connection timed out: no further information
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
-	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
-2020-03-16 23:57:33,754 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Opening socket connection to server 192.168.43.211/192.168.43.211:2181. Will not attempt to authenticate using SASL (unknown error)
-2020-03-16 23:57:42,785 [New I/O worker #1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer-  [DUBBO] All clients has discontected from /192.168.43.201:20880. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
-2020-03-16 23:57:42,787 [DubboServerHandler-192.168.43.201:20880-thread-11] INFO  com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol-  [DUBBO] disconected from /192.168.43.201:56610,url:dubbo://192.168.43.201:20880/cn.fiaojiashu.service.ItemService?anyhost=true&application=fjs-manager&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.fiaojiashu.service.ItemService&methods=getItemList,geiItemById,addItem&pid=10912&side=provider&timeout=600000&timestamp=1584373664669, dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-17 23:45:18,380 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization started
+2020-03-17 23:45:18,536 [localhost-startStop-1] INFO  org.springframework.web.context.support.XmlWebApplicationContext- Refreshing Root WebApplicationContext: startup date [Tue Mar 17 23:45:18 CST 2020]; root of context hierarchy
+2020-03-17 23:45:18,621 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader- Loading XML bean definitions from file [C:\Users\1\IdeaProjects\fiaojiashu\fjs-manager\fjs-manager-service\target\classes\spring\applicationContext-dao.xml]
+2020-03-17 23:45:18,862 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader- Loading XML bean definitions from file [C:\Users\1\IdeaProjects\fiaojiashu\fjs-manager\fjs-manager-service\target\classes\spring\applicationContext-service.xml]
+2020-03-17 23:45:19,041 [localhost-startStop-1] INFO  com.alibaba.dubbo.common.logger.LoggerFactory- using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-03-17 23:45:19,085 [localhost-startStop-1] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader- Loading XML bean definitions from file [C:\Users\1\IdeaProjects\fiaojiashu\fjs-manager\fjs-manager-service\target\classes\spring\applicationContext-trans.xml]
+2020-03-17 23:45:19,664 [localhost-startStop-1] INFO  org.springframework.context.support.PropertySourcesPlaceholderConfigurer- Loading properties file from class path resource [conf/db.properties]
+2020-03-17 23:45:19,676 [localhost-startStop-1] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-17 23:45:23,354 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.AbstractConfig-  [DUBBO] The service ready on spring started. service: cn.fiaojiashu.service.ItemService, dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-17 23:45:23,599 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.AbstractConfig-  [DUBBO] Export dubbo service cn.fiaojiashu.service.ItemService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-17 23:45:23,599 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.AbstractConfig-  [DUBBO] Export dubbo service cn.fiaojiashu.service.ItemService to url dubbo://192.168.43.201:20880/cn.fiaojiashu.service.ItemService?anyhost=true&application=fjs-manager&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemService&methods=addItem,getItemList,geiItemById&pid=4788&side=provider&timeout=600000&timestamp=1584459923387, dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-17 23:45:23,599 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.AbstractConfig-  [DUBBO] Register dubbo service cn.fiaojiashu.service.ItemService url dubbo://192.168.43.201:20880/cn.fiaojiashu.service.ItemService?anyhost=true&application=fjs-manager&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemService&methods=addItem,getItemList,geiItemById&pid=4788&side=provider&timeout=600000&timestamp=1584459923387 to registry registry://192.168.43.211:2181/com.alibaba.dubbo.registry.RegistryService?application=fjs-manager&dubbo=2.5.3&pid=4788&registry=zookeeper&timestamp=1584459923363, dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-17 23:45:24,244 [localhost-startStop-1] INFO  com.alibaba.dubbo.remoting.transport.AbstractServer-  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.43.201:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-17 23:45:24,309 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Load registry store file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, data: {cn.fiaojiashu.content.service.ContentService=empty://192.168.43.201/cn.fiaojiashu.content.service.ContentService?application=fjs-manager-web&category=configurators&dubbo=2.5.3&interface=cn.fiaojiashu.content.service.ContentService&methods=addContent&pid=10292&revision=1.0-SNAPSHOT&side=consumer&timestamp=1584458300020 empty://192.168.43.201/cn.fiaojiashu.content.service.ContentService?application=fjs-manager-web&category=routers&dubbo=2.5.3&interface=cn.fiaojiashu.content.service.ContentService&methods=addContent&pid=10292&revision=1.0-SNAPSHOT&side=consumer&timestamp=1584458300020 empty://192.168.43.201/cn.fiaojiashu.content.service.ContentService?application=fjs-manager-web&category=providers&dubbo=2.5.3&interface=cn.fiaojiashu.content.service.ContentService&methods=addContent&pid=10292&revision=1.0-SNAPSHOT&side=consumer&timestamp=1584458300020, cn.fiaojiashu.service.ItemCatService=empty://192.168.43.201/cn.fiaojiashu.service.ItemCatService?application=fjs-manager-web&category=configurators&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemCatService&methods=getItemCatList&pid=10292&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1584458300075 empty://192.168.43.201/cn.fiaojiashu.service.ItemCatService?application=fjs-manager-web&category=routers&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemCatService&methods=getItemCatList&pid=10292&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1584458300075 empty://192.168.43.201/cn.fiaojiashu.service.ItemCatService?application=fjs-manager-web&category=providers&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemCatService&methods=getItemCatList&pid=10292&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1584458300075, cn.fiaojiashu.service.ItemService=empty://192.168.43.201/cn.fiaojiashu.service.ItemService?application=fjs-manager-web&category=configurators&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemService&methods=addItem,getItemList,geiItemById&pid=10292&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1584458300131 empty://192.168.43.201/cn.fiaojiashu.service.ItemService?application=fjs-manager-web&category=routers&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemService&methods=addItem,getItemList,geiItemById&pid=10292&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1584458300131 empty://192.168.43.201/cn.fiaojiashu.service.ItemService?application=fjs-manager-web&category=providers&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemService&methods=addItem,getItemList,geiItemById&pid=10292&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1584458300131, cn.fiaojiashu.content.service.ContentCategoryService=empty://192.168.43.201/cn.fiaojiashu.content.service.ContentCategoryService?application=fjs-manager-web&category=configurators&dubbo=2.5.3&interface=cn.fiaojiashu.content.service.ContentCategoryService&methods=addContentCategory,getContentCatList&pid=10292&revision=1.0-SNAPSHOT&side=consumer&timestamp=1584458299462 empty://192.168.43.201/cn.fiaojiashu.content.service.ContentCategoryService?application=fjs-manager-web&category=routers&dubbo=2.5.3&interface=cn.fiaojiashu.content.service.ContentCategoryService&methods=addContentCategory,getContentCatList&pid=10292&revision=1.0-SNAPSHOT&side=consumer&timestamp=1584458299462 empty://192.168.43.201/cn.fiaojiashu.content.service.ContentCategoryService?application=fjs-manager-web&category=providers&dubbo=2.5.3&interface=cn.fiaojiashu.content.service.ContentCategoryService&methods=addContentCategory,getContentCatList&pid=10292&revision=1.0-SNAPSHOT&side=consumer&timestamp=1584458299462}, dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-17 23:45:24,475 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-03-17 23:45:24,475 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:host.name=DESKTOP-OEB8RPA.mshome.net
+2020-03-17 23:45:24,475 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:java.version=1.8.0_191
+2020-03-17 23:45:24,475 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:java.vendor=Oracle Corporation
+2020-03-17 23:45:24,475 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:java.home=C:\Program Files\Java\jdk1.8.0_191\jre
+2020-03-17 23:45:24,475 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:java.class.path=C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\lib\idea_rt.jar
+2020-03-17 23:45:24,476 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Program Files\Java\jdk1.8.0_191\jre\bin;"D:\winwxy\apache-tomcat-8.5.34-windows-x64\bin;D:\winwxy\apache-tomcat-8.5.34-windows-x64\lib";C:\Program Files\MySQL\MySQL Server 5.0\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\hadoop\hadoop-2.8.5\bin;D:\Program Files\Git\cmd;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseGit\bin;C:\Users\1\AppData\Local\Microsoft\WindowsApps;;.
+2020-03-17 23:45:24,476 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:java.io.tmpdir=C:\Users\1\AppData\Local\Temp\
+2020-03-17 23:45:24,476 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:java.compiler=<NA>
+2020-03-17 23:45:24,476 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:os.name=Windows 10
+2020-03-17 23:45:24,476 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:os.arch=amd64
+2020-03-17 23:45:24,476 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:os.version=10.0
+2020-03-17 23:45:24,476 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:user.name=1
+2020-03-17 23:45:24,476 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:user.home=C:\Users\1
+2020-03-17 23:45:24,476 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Client environment:user.dir=C:\Users\1\IdeaProjects\fiaojiashu\fjs-manager
+2020-03-17 23:45:24,478 [localhost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper- Initiating client connection, connectString=192.168.43.211:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@5d250a8d
+2020-03-17 23:45:24,533 [ZkClient-EventThread-26-192.168.43.211:2181] INFO  org.I0Itec.zkclient.ZkEventThread- Starting ZkClient event thread.
+2020-03-17 23:45:24,572 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Opening socket connection to server 192.168.43.211/192.168.43.211:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-03-17 23:45:24,574 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Socket connection established to 192.168.43.211/192.168.43.211:2181, initiating session
+2020-03-17 23:45:24,635 [localhost-startStop-1-SendThread(192.168.43.211:2181)] INFO  org.apache.zookeeper.ClientCnxn- Session establishment complete on server 192.168.43.211/192.168.43.211:2181, sessionid = 0x170de99fffb0017, negotiated timeout = 30000
+2020-03-17 23:45:24,638 [localhost-startStop-1-EventThread] INFO  org.I0Itec.zkclient.ZkClient- zookeeper state changed (SyncConnected)
+2020-03-17 23:45:24,639 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Register: dubbo://192.168.43.201:20880/cn.fiaojiashu.service.ItemService?anyhost=true&application=fjs-manager&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemService&methods=addItem,getItemList,geiItemById&pid=4788&side=provider&timeout=600000&timestamp=1584459923387, dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-17 23:45:24,695 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Subscribe: provider://192.168.43.201:20880/cn.fiaojiashu.service.ItemService?anyhost=true&application=fjs-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemService&methods=addItem,getItemList,geiItemById&pid=4788&side=provider&timeout=600000&timestamp=1584459923387, dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-17 23:45:24,771 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Notify urls for subscribe url provider://192.168.43.201:20880/cn.fiaojiashu.service.ItemService?anyhost=true&application=fjs-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemService&methods=addItem,getItemList,geiItemById&pid=4788&side=provider&timeout=600000&timestamp=1584459923387, urls: [empty://192.168.43.201:20880/cn.fiaojiashu.service.ItemService?anyhost=true&application=fjs-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemService&methods=addItem,getItemList,geiItemById&pid=4788&side=provider&timeout=600000&timestamp=1584459923387], dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-17 23:45:24,833 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.AbstractConfig-  [DUBBO] The service ready on spring started. service: cn.fiaojiashu.service.ItemCatService, dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-17 23:45:24,922 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.AbstractConfig-  [DUBBO] Export dubbo service cn.fiaojiashu.service.ItemCatService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-17 23:45:24,922 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.AbstractConfig-  [DUBBO] Export dubbo service cn.fiaojiashu.service.ItemCatService to url dubbo://192.168.43.201:20880/cn.fiaojiashu.service.ItemCatService?anyhost=true&application=fjs-manager&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemCatService&methods=getItemCatList&pid=4788&side=provider&timeout=600000&timestamp=1584459924858, dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-17 23:45:24,922 [localhost-startStop-1] INFO  com.alibaba.dubbo.config.AbstractConfig-  [DUBBO] Register dubbo service cn.fiaojiashu.service.ItemCatService url dubbo://192.168.43.201:20880/cn.fiaojiashu.service.ItemCatService?anyhost=true&application=fjs-manager&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemCatService&methods=getItemCatList&pid=4788&side=provider&timeout=600000&timestamp=1584459924858 to registry registry://192.168.43.211:2181/com.alibaba.dubbo.registry.RegistryService?application=fjs-manager&dubbo=2.5.3&pid=4788&registry=zookeeper&timestamp=1584459924856, dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-17 23:45:24,923 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Register: dubbo://192.168.43.201:20880/cn.fiaojiashu.service.ItemCatService?anyhost=true&application=fjs-manager&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemCatService&methods=getItemCatList&pid=4788&side=provider&timeout=600000&timestamp=1584459924858, dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-17 23:45:24,939 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Subscribe: provider://192.168.43.201:20880/cn.fiaojiashu.service.ItemCatService?anyhost=true&application=fjs-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemCatService&methods=getItemCatList&pid=4788&side=provider&timeout=600000&timestamp=1584459924858, dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-17 23:45:25,004 [localhost-startStop-1] INFO  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Notify urls for subscribe url provider://192.168.43.201:20880/cn.fiaojiashu.service.ItemCatService?anyhost=true&application=fjs-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemCatService&methods=getItemCatList&pid=4788&side=provider&timeout=600000&timestamp=1584459924858, urls: [empty://192.168.43.201:20880/cn.fiaojiashu.service.ItemCatService?anyhost=true&application=fjs-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.fiaojiashu.service.ItemCatService&methods=getItemCatList&pid=4788&side=provider&timeout=600000&timestamp=1584459924858], dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-17 23:45:25,011 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 6630 ms
+2020-03-17 23:45:25,014 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,023 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,024 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,025 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,026 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,026 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,028 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,029 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,030 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,031 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,032 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,033 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,033 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,034 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,035 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,036 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,037 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,037 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,039 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,039 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,041 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,041 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,042 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,043 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,044 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,045 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,046 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,047 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,047 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,048 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,049 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,050 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,050 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,060 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,061 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,062 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,062 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,066 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,067 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:25,068 [DubboSaveRegistryCache-thread-1] WARN  com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry-  [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\1\.dubbo\dubbo-registry-192.168.43.211.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-03-17 23:45:32,728 [New I/O worker #1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer-  [DUBBO] All clients has discontected from /192.168.43.201:20880. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-17 23:45:32,729 [DubboServerHandler-192.168.43.201:20880-thread-3] INFO  com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol-  [DUBBO] disconected from /192.168.43.201:57317,url:dubbo://192.168.43.201:20880/cn.fiaojiashu.service.ItemService?anyhost=true&application=fjs-manager&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.fiaojiashu.service.ItemService&methods=addItem,getItemList,geiItemById&pid=4788&side=provider&timeout=600000&timestamp=1584459923387, dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-17 23:56:22,312 [DubboServerHandler-192.168.43.201:20880-thread-5] INFO  com.alibaba.druid.pool.DruidDataSource- {dataSource-1} inited
+2020-03-17 23:57:14,356 [New I/O worker #2] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer-  [DUBBO] All clients has discontected from /192.168.43.201:20880. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+2020-03-17 23:57:14,358 [DubboServerHandler-192.168.43.201:20880-thread-8] INFO  com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol-  [DUBBO] disconected from /192.168.43.201:57568,url:dubbo://192.168.43.201:20880/cn.fiaojiashu.service.ItemService?anyhost=true&application=fjs-manager&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.fiaojiashu.service.ItemService&methods=addItem,getItemList,geiItemById&pid=4788&side=provider&timeout=600000&timestamp=1584459923387, dubbo version: 2.5.3, current host: 127.0.0.1

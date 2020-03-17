@@ -6,22 +6,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="fjs-manager-service" />
-        <module name="fjsmanagerservice" />
-        <module name="fjscommon" />
-        <module name="fjsmanagerpojo" />
-        <module name="fjsmanagerinterface" />
-        <module name="fjs-common" />
         <module name="fjsmanagerdao" />
-        <module name="fjs-manager-pojo" />
-        <module name="fjs-manager-web" />
+        <module name="fjs-manager-service" />
         <module name="fjs-manager-interface" />
+        <module name="fjs-common" />
+        <module name="fjs-manager-web" />
+        <module name="fjs-content-interface" />
         <module name="fjs-manager-dao" />
         <module name="fjsmanagerweb" />
+        <module name="fjscontentservice" />
+        <module name="fjsmanagerservice" />
+        <module name="fjsmanagerpojo" />
+        <module name="fjscommon" />
+        <module name="fjsportalweb" />
+        <module name="fjsmanagerinterface" />
+        <module name="fjs-manager-pojo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="fastdfs_client" target="1.5" />
+      <module name="fjscontentinterface" target="1.7" />
       <module name="fjsparent" target="1.5" />
     </bytecodeTargetLevel>
   </component>

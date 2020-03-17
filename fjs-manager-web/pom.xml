@@ -16,6 +16,11 @@
             <groupId>cn.fiaojiashu</groupId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <artifactId>fjs-content-interface</artifactId>
+            <groupId>cn.fiaojiashu</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
