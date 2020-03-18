@@ -1,6 +1,6 @@
-cn\fiaojiashu\common\pojo\EasyUIDataGridResult.class
 cn\fiaojiashu\common\util\FastDFSClient.class
-cn\fiaojiashu\common\util\FiaoJiaShuResult.class
 cn\fiaojiashu\common\util\JsonUtils.class
 cn\fiaojiashu\common\pojo\EasyUITreeNode.class
+cn\fiaojiashu\common\pojo\EasyUIDataGridResult.class
+cn\fiaojiashu\common\util\FiaoJiaShuResult.class
 cn\fiaojiashu\common\util\IDUtils.class

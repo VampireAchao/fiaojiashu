@@ -12,10 +12,10 @@
         <module name="fjs-common" />
         <module name="fjs-manager-web" />
         <module name="fjs-content-interface" />
-        <module name="fjs-manager-dao" />
         <module name="fjsmanagerweb" />
         <module name="fjscontentservice" />
         <module name="fjsmanagerservice" />
+        <module name="fjs-manager-dao" />
         <module name="fjsmanagerpojo" />
         <module name="fjscommon" />
         <module name="fjsportalweb" />
