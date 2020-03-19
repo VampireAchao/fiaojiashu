@@ -37,4 +37,5 @@
     <dubbo:reference interface="cn.fiaojiashu.service.ItemCatService" id="itemCatService"/>
     <dubbo:reference interface="cn.fiaojiashu.content.service.ContentCategoryService" id="contentCategoryService"/>
     <dubbo:reference interface="cn.fiaojiashu.content.service.ContentService" id="contentService"/>
+    <dubbo:reference interface="cn.fiaojiashu.search.service.SearchItemService" id="searchItemService"/>
 </beans>

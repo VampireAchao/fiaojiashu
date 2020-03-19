@@ -15,6 +15,7 @@ import java.util.Set;
  * @Description:jedis测试类
  */
 public class JedisTest {
+/*
     @Test
     public void testJedis() throws Exception {
         //创建连接Jedis对象，参数：host、port
@@ -60,4 +61,5 @@ public class JedisTest {
         //关闭JedisClustor
         jedisCluster.close();
     }
+*/
 }

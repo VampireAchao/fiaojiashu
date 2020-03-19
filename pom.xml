@@ -12,6 +12,8 @@
         <module>fjs-manager</module>
         <module>fjs-portal-web</module>
         <module>fjs-content</module>
+        <module>fjs-search</module>
+        <module>fjs-search-web</module>
     </modules>
 
     <packaging>pom</packaging>

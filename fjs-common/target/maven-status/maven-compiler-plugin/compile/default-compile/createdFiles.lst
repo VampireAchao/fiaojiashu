@@ -1,6 +1,11 @@
 cn\fiaojiashu\common\util\FastDFSClient.class
 cn\fiaojiashu\common\util\JsonUtils.class
 cn\fiaojiashu\common\pojo\EasyUITreeNode.class
+cn\fiaojiashu\common\jedis\JedisClient.class
 cn\fiaojiashu\common\pojo\EasyUIDataGridResult.class
+cn\fiaojiashu\common\pojo\SearchResult.class
 cn\fiaojiashu\common\util\FiaoJiaShuResult.class
+cn\fiaojiashu\common\pojo\SearchItem.class
 cn\fiaojiashu\common\util\IDUtils.class
+cn\fiaojiashu\common\jedis\JedisClientCluster.class
+cn\fiaojiashu\common\jedis\JedisClientPool.class

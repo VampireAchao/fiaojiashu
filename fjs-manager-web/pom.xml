@@ -21,6 +21,11 @@
             <groupId>cn.fiaojiashu</groupId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <artifactId>fjs-search-interface</artifactId>
+            <groupId>cn.fiaojiashu</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -101,6 +106,12 @@
         <dependency>
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.fiaojiashu</groupId>
+            <artifactId>fjs-search-interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
     <!--配置tomcat插件-->

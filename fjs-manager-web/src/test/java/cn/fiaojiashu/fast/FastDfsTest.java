@@ -10,7 +10,7 @@ import org.junit.Test;
  * @Description:
  */
 public class FastDfsTest {
-    @Test
+    /*@Test
     public void testUpload() throws Exception {
         //创建一个配置文件。文件名任意。内容就是tracker服务器的地址
         //使用全局对象加载配置文件。
@@ -28,7 +28,7 @@ public class FastDfsTest {
         for (String string : strings) {
             System.out.println(string);
         }
-    }
+    }*/
 
     @Test
     public void testFastDfsClient() throws Exception {

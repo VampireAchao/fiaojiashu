@@ -1,0 +1,4 @@
+cn\fiaojiashu\search\mapper\ItemMapper.class
+cn\fiaojiashu\search\service\impl\SearchItemServiceImpl.class
+cn\fiaojiashu\search\service\impl\SearchServiceImpl.class
+cn\fiaojiashu\search\dao\SearchDao.class
