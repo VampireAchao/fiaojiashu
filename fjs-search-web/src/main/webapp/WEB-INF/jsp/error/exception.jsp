@@ -17,7 +17,7 @@
 <link rel="stylesheet" type="text/css" href="/css/common.css?v=20160713" />
 <link rel="stylesheet" type="text/css" href="/css/all.css?v=20160713" />
 <link rel="stylesheet" type="text/css" href="/css/jquery.alerts.css" />
-<title>出错了 -宜立方商城</title>
+<title>出错了 -覅甲蜀商城</title>
 <jsp:include page="../commons/header.jsp" />
 <jsp:include page="../commons/mainmenu.jsp" />
 <body>
@@ -30,7 +30,7 @@
 						<h2>HTTP错误 404 - 文件或目录未找到</h2>
 						<p>
 							<span id="totalSecond">2</span>秒后自动跳转到首页，如不自动跳转，请按<a
-								href="http://www.e3mall.cn/">回到首页</a>
+								href="http://www.fiaojiashu.cn/">回到首页</a>
 						</p>
 						<div class="clear"></div>
 				</div>

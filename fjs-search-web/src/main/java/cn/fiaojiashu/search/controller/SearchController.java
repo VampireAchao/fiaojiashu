@@ -1,5 +1,6 @@
 package cn.fiaojiashu.search.controller;
 
+import cn.fiaojiashu.common.pojo.SearchResult;
 import cn.fiaojiashu.search.service.SearchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -7,8 +8,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import cn.fiaojiashu.common.pojo.SearchResult;
 
 /**
  * @ClassName: SearchController
@@ -37,6 +36,8 @@ public class SearchController {
         model.addAttribute("page", page);
         model.addAttribute("recourdCount", searchResult.getRecordCount());
         model.addAttribute("itemList", searchResult.getItemList());
+        //异常测试
+//        int a = 1 / 0;
         //返回逻辑视图
         return "search";
     }

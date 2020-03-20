@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="fjsmanagerpojo" />
         <module name="fjsmanagerdao" />
         <module name="fjs-manager-service" />
+        <module name="fjs-content-service" />
         <module name="fjs-search-service" />
         <module name="fjs-search-web" />
         <module name="fjsmanagerservice" />
@@ -17,11 +17,11 @@
         <module name="fjs-manager-web" />
         <module name="fjs-content-interface" />
         <module name="fjsmanagerweb" />
-        <module name="fjscommon" />
+        <module name="fjscontentservice" />
         <module name="fjs-search-interface" />
         <module name="fjs-portal-web" />
-        <module name="fjs-content-service" />
-        <module name="fjscontentservice" />
+        <module name="fjsmanagerpojo" />
+        <module name="fjscommon" />
         <module name="fjs-manager-dao" />
         <module name="fjsmanagerinterface" />
         <module name="fjsportalweb" />
