@@ -14,6 +14,7 @@ import org.junit.Test;
  * @Description:
  */
 public class TestSolrCloud {
+/*
     @Test
     public void testAddDocument() throws Exception {
         //创建一个集群的连接，应该使用CloudSolrServer创建
@@ -32,6 +33,7 @@ public class TestSolrCloud {
         //提交
         solrServer.commit();
     }
+*/
 
     /*@Test
     public void testQueryDocument() throws Exception {

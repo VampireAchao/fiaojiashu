@@ -3,6 +3,7 @@ package cn.fiaojiashu.service;
 import cn.fiaojiashu.common.pojo.EasyUIDataGridResult;
 import cn.fiaojiashu.common.util.FiaoJiaShuResult;
 import cn.fiaojiashu.pojo.TbItem;
+import cn.fiaojiashu.pojo.TbItemDesc;
 
 /**
  * @ClassName: ItemService
@@ -16,7 +17,14 @@ public interface ItemService {
      * @param itemId
      * @return
      */
-    TbItem geiItemById(long itemId);
+    TbItem getItemById(long itemId);
+
+    /**
+     * 通过id查询商品详情描述
+     * @param itemId
+     * @return
+     */
+    TbItemDesc getItemDescById(long itemId);
 
     /**
      * 查询所有商品
@@ -29,6 +37,7 @@ public interface ItemService {
 
     /**
      * 添加商品
+     *
      * @param item
      * @param desc
      * @return

@@ -30,7 +30,7 @@ public class ItemController {
     @RequestMapping("/item/{itemId}")
     @ResponseBody
     public TbItem getItemById(@PathVariable Long itemId) {
-        TbItem tbItem = itemService.geiItemById(itemId);
+        TbItem tbItem = itemService.getItemById(itemId);
         return tbItem;
     }
 

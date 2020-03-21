@@ -1,4 +1,3 @@
-/*
 package cn.fiaojiashu.activemq;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
@@ -7,14 +6,14 @@ import org.junit.Test;
 
 import javax.jms.*;
 
-*/
 /**
  * @ClassName: ActiveMqTest
  * @Date: 2020/3/20 19:49
  * @Description:点到点形式发送消息
- *//*
+ */
 
 public class ActiveMqTest {
+/*
     @Test
     public void testQueueProducer() throws Exception {
         //1、传建一个连接工厂对象,需要指定服务的IP及端口
@@ -32,11 +31,9 @@ public class ActiveMqTest {
         //6、使用Session对象创建一个Producer对象
         MessageProducer producer = session.createProducer(queue);
         //7、创建一个Message对象，可以使用TextMessage。
-        */
-/*ActiveMQTextMessage textMessage = new ActiveMQTextMessage();
-        textMessage.setText("hello Activemq");*//*
-
-        TextMessage textMessage = session.createTextMessage("hello Activemq");
+        ActiveMQTextMessage textMessage = new ActiveMQTextMessage();
+        textMessage.setText("hello Activemq");
+//        TextMessage textMessage = session.createTextMessage("hello Activemq");
         //8、发送消息
         producer.send(textMessage);
         //9、关闭资源
@@ -56,7 +53,7 @@ public class ActiveMqTest {
         //使用Connection对象创建一个Session对象
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
         //创建一个Destination对象（queue对象）
-        Queue queue = session.createQueue("test-queue");
+        Queue queue = session.createQueue("spring-queue");
         //使用Session对象创建一个消费者对象
         MessageConsumer consumer = session.createConsumer(queue);
         //接收消息
@@ -99,11 +96,9 @@ public class ActiveMqTest {
         //6、使用Session对象创建一个Producer对象
         MessageProducer producer = session.createProducer(topic);
         //7、创建一个Message对象，可以使用TextMessage。
-        */
-/*ActiveMQTextMessage textMessage = new ActiveMQTextMessage();
-        textMessage.setText("hello Activemq");*//*
-
-        TextMessage textMessage = session.createTextMessage("topic message");
+        ActiveMQTextMessage textMessage = new ActiveMQTextMessage();
+        textMessage.setText("hello Activemq");
+//        TextMessage textMessage = session.createTextMessage("topic message");
         //8、发送消息
         producer.send(textMessage);
         //9、关闭资源
@@ -150,6 +145,7 @@ public class ActiveMqTest {
         session.close();
         connection.close();
     }
+
     @Test
     public void testTopicConsumer2() throws Exception {
         //创建一个ConnectionFactory对象连接MQ服务器
@@ -225,5 +221,5 @@ public class ActiveMqTest {
         session.close();
         connection.close();
     }
-}
 */
+}

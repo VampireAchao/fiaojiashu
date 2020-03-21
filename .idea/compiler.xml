@@ -20,6 +20,7 @@
         <module name="fjscommon" />
         <module name="fjs-search-interface" />
         <module name="fjs-portal-web" />
+        <module name="fjs-item-web" />
         <module name="fjs-content-service" />
         <module name="fjscontentservice" />
         <module name="fjs-manager-dao" />

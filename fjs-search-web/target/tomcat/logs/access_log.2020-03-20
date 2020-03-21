@@ -1,2 +1,0 @@
-0:0:0:0:0:0:0:1 - - [20/Mar/2020:21:22:33 +0800] "GET /html/web/_public/_ajaxStaticMenu.html?v20140430 HTTP/1.1" 404 949 http-bio-8085-exec-1 75
-0:0:0:0:0:0:0:1 - - [20/Mar/2020:21:22:41 +0800] "GET /search.html?keyword=redmi HTTP/1.1" 200 23582 http-bio-8085-exec-5 2277

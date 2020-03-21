@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/fjs-content/fjs-content-service" />
+    <file type="web" url="file://$PROJECT_DIR$/fjs-item-web" />
     <file type="web" url="file://$PROJECT_DIR$/fjs-manager-web" />
     <file type="web" url="file://$PROJECT_DIR$/fjs-manager/fjs-manager-service" />
     <file type="web" url="file://$PROJECT_DIR$/fjs-manager/fjs-manager-web" />

@@ -12,4 +12,7 @@ import java.util.List;
 public interface ItemMapper {
     //获取商品列表
     List<SearchItem> getItemList();
+
+    //通过id查询商品
+    SearchItem getItemById(long itemId);
 }
