@@ -1,2 +1,4 @@
 cn\fiaojiashu\item\controller\ItemController.class
+cn\fiaojiashu\item\controller\HtmlGenController.class
+cn\fiaojiashu\item\listener\HtmlGenListener.class
 cn\fiaojiashu\item\pojo\Item.class

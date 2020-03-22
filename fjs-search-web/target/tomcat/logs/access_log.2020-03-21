@@ -1,8 +1,0 @@
-0:0:0:0:0:0:0:1 - - [21/Mar/2020:15:06:49 +0800] "GET /article/search?keyword=%E6%9C%88%E9%A5%BC HTTP/1.1" 404 979 http-bio-8085-exec-1 71
-0:0:0:0:0:0:0:1 - - [21/Mar/2020:15:07:22 +0800] "GET /search.html?keyword=bilibili HTTP/1.1" 200 23542 http-bio-8085-exec-5 5786
-0:0:0:0:0:0:0:1 - - [21/Mar/2020:15:08:01 +0800] "GET /search.html?keyword=redmi HTTP/1.1" 200 23582 http-bio-8085-exec-7 54
-0:0:0:0:0:0:0:1 - - [21/Mar/2020:15:18:48 +0800] "GET /search.html?keyword=%E6%89%8B%E5%8A%9E HTTP/1.1" 200 85089 http-bio-8085-exec-1 243
-0:0:0:0:0:0:0:1 - - [21/Mar/2020:15:55:41 +0800] "GET /search.html?keyword=%E6%89%8B%E5%8A%9E HTTP/1.1" 200 85089 http-bio-8085-exec-5 2034
-0:0:0:0:0:0:0:1 - - [21/Mar/2020:15:57:10 +0800] "GET /search.html?keyword=%E6%89%8B%E5%8A%9E HTTP/1.1" 200 85089 http-bio-8085-exec-8 197
-0:0:0:0:0:0:0:1 - - [21/Mar/2020:15:59:12 +0800] "GET /html/web/_public/_ajaxStaticMenu.html?v20140430 HTTP/1.1" 404 949 http-bio-8085-exec-9 53
-0:0:0:0:0:0:0:1 - - [21/Mar/2020:15:59:28 +0800] "GET /search.html?keyword=%E5%AE%88%E6%9C%9B%E5%85%88%E9%94%8B HTTP/1.1" 200 22530 http-bio-8085-exec-1 92

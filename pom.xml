@@ -15,6 +15,8 @@
         <module>fjs-search</module>
         <module>fjs-search-web</module>
         <module>fjs-item-web</module>
+        <module>fjs-sso</module>
+        <module>fjs-sso-web</module>
     </modules>
 
     <packaging>pom</packaging>

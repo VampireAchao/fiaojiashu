@@ -10,6 +10,8 @@
     <file type="web" url="file://$PROJECT_DIR$/fjs-portal-web" />
     <file type="web" url="file://$PROJECT_DIR$/fjs-search-web" />
     <file type="web" url="file://$PROJECT_DIR$/fjs-search/fjs-search-service" />
+    <file type="web" url="file://$PROJECT_DIR$/fjs-sso-web" />
+    <file type="web" url="file://$PROJECT_DIR$/fjs-sso/fjs-sso-service" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

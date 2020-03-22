@@ -19,5 +19,9 @@
     <file url="file://$PROJECT_DIR$/fjs-search-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fjs-search/fjs-search-interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fjs-search/fjs-search-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fjs-sso" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fjs-sso-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fjs-sso/fjs-sso-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fjs-sso/fjs-sso-service" charset="UTF-8" />
   </component>
 </project>
