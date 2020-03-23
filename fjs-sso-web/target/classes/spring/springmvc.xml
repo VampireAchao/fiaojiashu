@@ -25,5 +25,7 @@
     <!-- 引用dubbo服务 -->
     <dubbo:application name="fjs-sso-web"/>
     <dubbo:registry protocol="zookeeper" address="192.168.43.211:2181"/>
-<!--    <dubbo:reference interface="cn.fiaojiashu.content.service.ContentService" id="contentService"/>-->
+    <dubbo:reference interface="cn.fiaojiashu.sso.service.RegisterService" id="registerService"/>
+    <dubbo:reference interface="cn.fiaojiashu.sso.service.LoginService" id="loginService"/>
+    <dubbo:reference interface="cn.fiaojiashu.sso.service.TokenService" id="tokenService"/>
 </beans>

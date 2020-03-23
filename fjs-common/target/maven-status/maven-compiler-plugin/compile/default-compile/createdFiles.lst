@@ -6,6 +6,7 @@ cn\fiaojiashu\common\pojo\EasyUIDataGridResult.class
 cn\fiaojiashu\common\pojo\SearchResult.class
 cn\fiaojiashu\common\util\FiaoJiaShuResult.class
 cn\fiaojiashu\common\pojo\SearchItem.class
+cn\fiaojiashu\common\util\CookieUtils.class
 cn\fiaojiashu\common\util\IDUtils.class
 cn\fiaojiashu\common\jedis\JedisClientCluster.class
 cn\fiaojiashu\common\jedis\JedisClientPool.class
