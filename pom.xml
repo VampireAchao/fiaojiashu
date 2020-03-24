@@ -17,6 +17,8 @@
         <module>fjs-item-web</module>
         <module>fjs-sso</module>
         <module>fjs-sso-web</module>
+        <module>fjs-cart</module>
+        <module>fjs-cart-web</module>
     </modules>
 
     <packaging>pom</packaging>
