@@ -26,4 +26,7 @@ public interface CartService {
 
     //删除购物车商品
     FiaoJiaShuResult deleteCartItem(long userId, long itemId);
+
+    //清空购物车
+    FiaoJiaShuResult clearCartItem(long userId);
 }

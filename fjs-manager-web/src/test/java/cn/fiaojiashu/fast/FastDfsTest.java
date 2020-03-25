@@ -30,10 +30,10 @@ public class FastDfsTest {
         }
     }*/
 
-    @Test
+    /*@Test
     public void testFastDfsClient() throws Exception {
         FastDFSClient fastDFSClient = new FastDFSClient("C:/Users/1/IdeaProjects/fiaojiashu/fjs-manager-web/src/main/resources/conf/client.conf");
         String string = fastDFSClient.uploadFile("C:/Users/1/Desktop/study/video/qq_images/3a22a51002d457b5.gif");
         System.out.println(string);
-    }
+    }*/
 }

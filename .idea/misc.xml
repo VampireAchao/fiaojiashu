@@ -9,6 +9,8 @@
     <file type="web" url="file://$PROJECT_DIR$/fjs-manager-web" />
     <file type="web" url="file://$PROJECT_DIR$/fjs-manager/fjs-manager-service" />
     <file type="web" url="file://$PROJECT_DIR$/fjs-manager/fjs-manager-web" />
+    <file type="web" url="file://$PROJECT_DIR$/fjs-order-web" />
+    <file type="web" url="file://$PROJECT_DIR$/fjs-order/fjs-order-service" />
     <file type="web" url="file://$PROJECT_DIR$/fjs-portal-web" />
     <file type="web" url="file://$PROJECT_DIR$/fjs-search-web" />
     <file type="web" url="file://$PROJECT_DIR$/fjs-search/fjs-search-service" />

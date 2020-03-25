@@ -18,6 +18,10 @@
     <file url="file://$PROJECT_DIR$/fjs-manager/fjs-manager-pojo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fjs-manager/fjs-manager-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fjs-manager/fjs-manager-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fjs-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fjs-order-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fjs-order/fjs-order-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fjs-order/fjs-order-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fjs-portal-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fjs-search" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fjs-search-web" charset="UTF-8" />

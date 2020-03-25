@@ -1,9 +1,0 @@
-0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:25:25 +0800] "POST /cart/update/num/158476984125226/1.action HTTP/1.1" 200 48 http-bio-8090-exec-1 1272
-0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:25:42 +0800] "GET /cart/delete/158462962396027.html HTTP/1.1" 302 - http-bio-8090-exec-3 18
-0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:25:44 +0800] "GET /cart/cart.html HTTP/1.1" 200 20087 http-bio-8090-exec-5 1595
-0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:25:55 +0800] "POST /cart/update/num/158477509630070/2.action HTTP/1.1" 200 48 http-bio-8090-exec-7 24
-0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:25:55 +0800] "POST /cart/update/num/158476984125226/2.action HTTP/1.1" 200 48 http-bio-8090-exec-8 13
-0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:25:56 +0800] "POST /cart/update/num/158476984125226/3.action HTTP/1.1" 200 48 http-bio-8090-exec-9 9
-0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:25:56 +0800] "POST /cart/update/num/158476984125226/4.action HTTP/1.1" 200 48 http-bio-8090-exec-10 12
-0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:25:56 +0800] "POST /cart/update/num/158476984125226/5.action HTTP/1.1" 200 48 http-bio-8090-exec-10 21
-0:0:0:0:0:0:0:1 - - [24/Mar/2020:18:25:56 +0800] "POST /cart/update/num/158476984125226/6.action HTTP/1.1" 200 48 http-bio-8090-exec-10 13

@@ -10,6 +10,7 @@
     <modules>
         <module>fjs-common</module>
         <module>fjs-manager</module>
+        <module>fjs-manager-web</module>
         <module>fjs-portal-web</module>
         <module>fjs-content</module>
         <module>fjs-search</module>
@@ -19,6 +20,8 @@
         <module>fjs-sso-web</module>
         <module>fjs-cart</module>
         <module>fjs-cart-web</module>
+        <module>fjs-order</module>
+        <module>fjs-order-web</module>
     </modules>
 
     <packaging>pom</packaging>

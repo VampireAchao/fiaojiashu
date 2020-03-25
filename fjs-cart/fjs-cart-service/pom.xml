@@ -15,7 +15,7 @@
         <dependency>
             <groupId>cn.fiaojiashu</groupId>
             <artifactId>fjs-manager-dao</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <artifactId>fjs-cart-interface</artifactId>

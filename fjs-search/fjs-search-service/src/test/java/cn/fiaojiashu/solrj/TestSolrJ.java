@@ -35,7 +35,7 @@ public class TestSolrJ {
         solrServer.commit();
     }*/
 
-    @Test
+/*    @Test
     public void deleteDocument() throws Exception {
         SolrServer solrServer = new HttpSolrServer("http://192.168.43.215:8080/solr/collection1");
         //删除文档
@@ -43,7 +43,7 @@ public class TestSolrJ {
         solrServer.deleteByQuery("id:doc01");
         //提交
         solrServer.commit();
-    }
+    }*/
 
 /*    @Test
     public void queryIndex() throws Exception {
