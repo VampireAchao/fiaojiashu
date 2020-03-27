@@ -70,7 +70,7 @@ function weblogin(userId,userType){
 
     wt.contentId = "WEB:登录流程:登录成功";
     wt.contentGroup = {
-        1 :"WEB:登录流程",2 :"网站",3 :"登录成功" //如网站，登录类型为网站（意思是来源宜立方商城的注册用户）、QQ、新浪微博、腾讯微博、支付宝。
+        1 :"WEB:登录流程",2 :"网站",3 :"登录成功" //如网站，登录类型为网站（意思是来源覅甲蜀商城的注册用户）、QQ、新浪微博、腾讯微博、支付宝。
     };
     wt.customerId = userId;//用户 ID，该ID是跟CRM 用户打通的主键
     wt.customSessionParameter = {

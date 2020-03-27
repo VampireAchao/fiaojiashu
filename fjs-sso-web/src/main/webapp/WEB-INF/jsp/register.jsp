@@ -79,7 +79,7 @@
             <li class="regPl88">
 			<span  class="regM" style="margin-left:29px">
 				<input id="AgreeId" name="AgreeId" type="checkbox" checked="" onclick="ckAgree();">
-				<a href="https://passport.e3mall.cn/xy.html" target="_blank"  class="checkTitle">我已阅读并同意<font style="font-size:12px;">《宜立方商城用户注册协议》</font></a>
+				<a href="https://passport.e3mall.cn/xy.html" target="_blank"  class="checkTitle">我已阅读并同意<font style="font-size:12px;">《覅甲蜀商城用户注册协议》</font></a>
 			</span>
                 <span  id="AgreeIdErr" ></span>
             </li>
@@ -105,9 +105,9 @@
 				<a href="http://supplier.e3mall.cn/supplierApply" rel="nofollow" class="footerlink1">供应商申请</a>
 			</span>
 			<p> 
-				北京宜立方电子商务有限公司<br />
+				北京覅甲蜀电子商务有限公司<br />
 				北京市公安局顺义分局备案11011302000890号|<a href="http://www.miibeian.gov.cn" target="_blank" rel="nofollow" class="footerlink1">京ICP备12011349号</a>|<a href="http://www.e3mall.cn/www/174/461.html" target="_blank" rel="nofollow" class="footerlink1">企业营业执照</a><br />
-				Copyright© 宜立方商城 e3mall.cn 版权所有<br /> 
+				Copyright© 覅甲蜀商城 e3mall.cn 版权所有<br /> 
 			</p>
 		</div>
 		<!-- /footer -->

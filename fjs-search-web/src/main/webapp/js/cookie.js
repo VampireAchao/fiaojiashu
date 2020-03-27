@@ -154,7 +154,7 @@ function isOnline(wwwurl,homeurl,passporturl){
 			nickName = 'null'==nickName?'嘿':nickName;
 			var welComeMsg = '';
 			if('嘿' == nickName){
-				welComeMsg = nickName+'，欢迎来宜立方商城！';
+				welComeMsg = nickName+'，欢迎来覅甲蜀商城！';
 			}else{
 				welComeMsg = nickName+'，欢迎您！';
 			}

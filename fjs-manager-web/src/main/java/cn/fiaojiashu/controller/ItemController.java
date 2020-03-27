@@ -3,6 +3,7 @@ package cn.fiaojiashu.controller;
 import cn.fiaojiashu.common.pojo.EasyUIDataGridResult;
 import cn.fiaojiashu.common.util.FiaoJiaShuResult;
 import cn.fiaojiashu.pojo.TbItem;
+import cn.fiaojiashu.pojo.TbItemDesc;
 import cn.fiaojiashu.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -49,10 +50,31 @@ public class ItemController {
         return result;
     }
 
+    /**
+     * 添加商品
+     *
+     * @param item
+     * @param desc
+     * @return
+     */
     @RequestMapping(value = "/item/save", method = RequestMethod.POST)
     @ResponseBody
     public FiaoJiaShuResult addItem(TbItem item, String desc) {
         FiaoJiaShuResult result = itemService.addItem(item, desc);
+        return result;
+    }
+
+    @RequestMapping("/item/desc/{itemId}")
+    @ResponseBody
+    public FiaoJiaShuResult getTbItemDesc(@PathVariable Long itemId) {
+        TbItemDesc itemDesc = itemService.getItemDescById(itemId);
+        return FiaoJiaShuResult.ok(itemDesc);
+    }
+
+    @RequestMapping(value = "/item/update", method = RequestMethod.POST)
+    @ResponseBody
+    public FiaoJiaShuResult updateItem(TbItem item, String desc) {
+        FiaoJiaShuResult result = itemService.updateItem(item, desc);
         return result;
     }
 

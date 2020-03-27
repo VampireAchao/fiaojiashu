@@ -1162,7 +1162,7 @@ function delInvoice(id,inv_type){
 function checkInv(){
   clearTips();
   var flag = true;
-  //var invoiceCompany = new Array('北京宜立方电子商务有限公司', '宜立方电子商务', '宜立方电子商务有限公司', '宜立方商城', '北京宜立方电商有限公司');
+  //var invoiceCompany = new Array('北京覅甲蜀电子商务有限公司', '覅甲蜀电子商务', '覅甲蜀电子商务有限公司', '覅甲蜀商城', '北京覅甲蜀电商有限公司');
   if($("input[name='Invoice[inv_type]']:checked").val() == 1){	
     var inv_type = $("input[name='Invoice[inv_type]']:checked").val();
     var inv_title = $("input[name='Invoice[inv_title]']:checked").val();

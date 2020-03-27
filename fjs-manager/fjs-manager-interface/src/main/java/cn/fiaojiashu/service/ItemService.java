@@ -44,4 +44,11 @@ public interface ItemService {
      */
     FiaoJiaShuResult addItem(TbItem item, String desc);
 
+    /**
+     * 修改商品
+     * @param item
+     * @param desc
+     * @return
+     */
+    FiaoJiaShuResult updateItem(TbItem item,String desc);
 }

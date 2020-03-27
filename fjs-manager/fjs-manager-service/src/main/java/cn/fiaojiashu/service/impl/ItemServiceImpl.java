@@ -9,6 +9,7 @@ import cn.fiaojiashu.mapper.TbItemDescMapper;
 import cn.fiaojiashu.mapper.TbItemMapper;
 import cn.fiaojiashu.pojo.TbItem;
 import cn.fiaojiashu.pojo.TbItemDesc;
+import cn.fiaojiashu.pojo.TbItemDescExample;
 import cn.fiaojiashu.pojo.TbItemExample;
 import cn.fiaojiashu.service.ItemService;
 import com.github.pagehelper.PageHelper;
@@ -152,6 +153,48 @@ public class ItemServiceImpl implements ItemService {
             @Override
             public Message createMessage(Session session) throws JMSException {
                 TextMessage textMessage = session.createTextMessage(itemId + "");
+                return textMessage;
+            }
+        });
+        //返回成功
+        return FiaoJiaShuResult.ok();
+    }
+
+    @Override
+    public FiaoJiaShuResult updateItem(TbItem item, String desc) {
+        //获取商品id
+        final long itemId = item.getId();
+        //设置item的更新时间
+        item.setUpdated(new Date());
+        //修改商品表数据
+        TbItemExample itemExample = new TbItemExample();
+        TbItemExample.Criteria itemExampleCriteria = itemExample.createCriteria();
+        itemExampleCriteria.andIdEqualTo(itemId);
+        itemMapper.updateByExampleSelective(item, itemExample);
+        //创建一个商品描述表对应的pojo对象
+        TbItemDesc itemDesc = new TbItemDesc();
+        //补全属性
+        itemDesc.setItemId(itemId);
+        itemDesc.setItemDesc(desc);
+        itemDesc.setUpdated(new Date());
+        //修改商品描述表数据
+        TbItemDescExample itemDescExample = new TbItemDescExample();
+        TbItemDescExample.Criteria itemDescExampleCriteria = itemDescExample.createCriteria();
+        itemDescExampleCriteria.andItemIdEqualTo(itemId);
+        itemDescMapper.updateByExampleSelective(itemDesc, itemDescExample);
+        //把结果添加到缓存
+        try {
+            jedisClient.set(REDIS_ITEM_PRE + itemId + ":DESC", JsonUtils.objectToJson(itemDesc));
+            //设置过期时间
+            jedisClient.expire(REDIS_ITEM_PRE + itemId + ":DESC", ITEM_CACHE_EXPIRE);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        //发送一个商品修改消息
+        jmsTemplate.send(topicDestination, new MessageCreator() {
+            @Override
+            public Message createMessage(Session session) throws JMSException {
+                TextMessage textMessage = session.createTextMessage("update:" + itemId + "");
                 return textMessage;
             }
         });
