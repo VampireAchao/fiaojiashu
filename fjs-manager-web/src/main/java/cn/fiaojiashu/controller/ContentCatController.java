@@ -5,10 +5,7 @@ import cn.fiaojiashu.common.util.FiaoJiaShuResult;
 import cn.fiaojiashu.content.service.ContentCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -37,6 +34,7 @@ public class ContentCatController {
 
     /**
      * 添加内容分类
+     *
      * @param parentId
      * @param name
      * @return
@@ -48,4 +46,35 @@ public class ContentCatController {
         FiaoJiaShuResult result = contentCategoryService.addContentCategory(parentId, name);
         return result;
     }
+
+    /**
+     * 删除内容分类
+     *
+     * @param id
+     * @return
+     */
+    @RequestMapping(value = "/content/category/delete", method = RequestMethod.POST)
+    @ResponseBody
+    public FiaoJiaShuResult deleteContentCategory(Long id) {
+        //调用服务删除节点
+        FiaoJiaShuResult result = contentCategoryService.removeContentCategory(id);
+        return result;
+    }
+
+    /**
+     * 重命名内容分类
+     *
+     * @param id
+     * @param name
+     * @return
+     */
+    @RequestMapping(value = "/content/category/update", method = RequestMethod.POST)
+    @ResponseBody
+    public FiaoJiaShuResult updateContentCategory(Long id, String name) {
+        //调用服务删除节点
+        FiaoJiaShuResult result = contentCategoryService.renameContentCategory(id, name);
+        return result;
+    }
+
+
 }

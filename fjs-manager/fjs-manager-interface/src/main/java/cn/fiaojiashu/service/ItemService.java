@@ -21,6 +21,7 @@ public interface ItemService {
 
     /**
      * 通过id查询商品详情描述
+     *
      * @param itemId
      * @return
      */
@@ -46,9 +47,35 @@ public interface ItemService {
 
     /**
      * 修改商品
+     *
      * @param item
      * @param desc
      * @return
      */
-    FiaoJiaShuResult updateItem(TbItem item,String desc);
+    FiaoJiaShuResult updateItem(TbItem item, String desc);
+
+    /**
+     * 删除商品
+     *
+     * @param itemId
+     * @return
+     */
+    FiaoJiaShuResult deleteItem(Long itemId);
+
+    /**
+     * 下架商品
+     *
+     * @param item
+     * @return
+     */
+    FiaoJiaShuResult instockItem(TbItem item);
+
+    /**
+     * 上架商品
+     *
+     * @param item
+     * @return
+     */
+    FiaoJiaShuResult reshelfItem(TbItem item);
+
 }

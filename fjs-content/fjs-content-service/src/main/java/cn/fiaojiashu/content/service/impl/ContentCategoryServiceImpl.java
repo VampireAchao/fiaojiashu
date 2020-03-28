@@ -7,6 +7,7 @@ import cn.fiaojiashu.mapper.TbContentCategoryMapper;
 import cn.fiaojiashu.pojo.TbContentCategory;
 import cn.fiaojiashu.pojo.TbContentCategoryExample;
 import cn.fiaojiashu.pojo.TbContentCategoryExample.Criteria;
+import cn.fiaojiashu.pojo.TbContentExample;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -69,10 +70,52 @@ public class ContentCategoryServiceImpl implements ContentCategoryService {
         TbContentCategory parent = contentCategoryMapper.selectByPrimaryKey(parentId);
         if (!parent.getIsParent()) {
             parent.setIsParent(true);
-            //更新到数据库中
+            //更新父节点到数据库中
             contentCategoryMapper.updateByPrimaryKey(parent);
         }
         //返回结果,返回FiaoJiaShuResult，包含pojo
         return FiaoJiaShuResult.ok(contentCategory);
+    }
+
+    @Override
+    public FiaoJiaShuResult removeContentCategory(long id) {
+        //根据id查询该节点
+        TbContentCategory contentCategory = contentCategoryMapper.selectByPrimaryKey(id);
+        if (contentCategory == null) {
+            return FiaoJiaShuResult.build(201, "该节点不存在");
+        }
+        //删除内容分类
+        contentCategoryMapper.deleteByPrimaryKey(id);
+        //取出父节点id
+        long parentId = contentCategory.getParentId();
+        //判断父节点下面还有没有子节点
+        TbContentCategoryExample example = new TbContentCategoryExample();
+        Criteria criteria = example.createCriteria();
+        criteria.andParentIdEqualTo(parentId);
+        List<TbContentCategory> contentCategories = contentCategoryMapper.selectByExample(example);
+        if (contentCategories != null && contentCategories.size() != 0) {
+            //如果没有则父节点的isparent属性改为false
+            //根据id查询父节点
+            TbContentCategory parent = new TbContentCategory();
+            parent.setIsParent(false);
+            //更新父节点到数据库中
+            contentCategoryMapper.updateByPrimaryKeySelective(parent);
+        }
+        //返回结果
+        return FiaoJiaShuResult.ok();
+    }
+
+    @Override
+    public FiaoJiaShuResult renameContentCategory(long id, String name) {
+        //创建一个对象
+        TbContentCategory contentCategory = new TbContentCategory();
+        //修改属性
+        contentCategory.setId(id);
+        contentCategory.setUpdated(new Date());
+        contentCategory.setName(name);
+        //更新到数据库
+        contentCategoryMapper.updateByPrimaryKeySelective(contentCategory);
+        //返回结果
+        return FiaoJiaShuResult.ok();
     }
 }

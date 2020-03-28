@@ -164,6 +164,9 @@ public class ItemServiceImpl implements ItemService {
     public FiaoJiaShuResult updateItem(TbItem item, String desc) {
         //获取商品id
         final long itemId = item.getId();
+        if (item.getPrice() != null) {
+            item.setPrice(item.getPrice() / 10);
+        }
         //设置item的更新时间
         item.setUpdated(new Date());
         //修改商品表数据
@@ -184,6 +187,11 @@ public class ItemServiceImpl implements ItemService {
         itemDescMapper.updateByExampleSelective(itemDesc, itemDescExample);
         //把结果添加到缓存
         try {
+            jedisClient.del(REDIS_ITEM_PRE + itemId + ":BASE");
+            jedisClient.set(REDIS_ITEM_PRE + itemId + ":BASE", JsonUtils.objectToJson(item));
+            //设置过期时间
+            jedisClient.expire(REDIS_ITEM_PRE + itemId + ":BASE", ITEM_CACHE_EXPIRE);
+            jedisClient.del(REDIS_ITEM_PRE + itemId + ":DESC");
             jedisClient.set(REDIS_ITEM_PRE + itemId + ":DESC", JsonUtils.objectToJson(itemDesc));
             //设置过期时间
             jedisClient.expire(REDIS_ITEM_PRE + itemId + ":DESC", ITEM_CACHE_EXPIRE);
@@ -194,11 +202,84 @@ public class ItemServiceImpl implements ItemService {
         jmsTemplate.send(topicDestination, new MessageCreator() {
             @Override
             public Message createMessage(Session session) throws JMSException {
-                TextMessage textMessage = session.createTextMessage("update:" + itemId + "");
+                TextMessage textMessage = session.createTextMessage(itemId + "");
                 return textMessage;
             }
         });
         //返回成功
+        return FiaoJiaShuResult.ok();
+    }
+
+    @Override
+    public FiaoJiaShuResult deleteItem(final Long itemId) {
+        //判断id是否为空
+        if (itemId == null) {
+            return FiaoJiaShuResult.build(201,"id不能为空");
+        }
+        //删除数据库中的商品
+        itemMapper.deleteByPrimaryKey(itemId);
+        //删除数据库中的商品描述
+        itemDescMapper.deleteByPrimaryKey(itemId);
+        //删除缓存中的数据
+        try {
+            jedisClient.del(REDIS_ITEM_PRE + itemId + ":BASE");
+            jedisClient.del(REDIS_ITEM_PRE + itemId + ":DESC");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        //发送一个商品删除消息
+        jmsTemplate.send(topicDestination, new MessageCreator() {
+            @Override
+            public Message createMessage(Session session) throws JMSException {
+                TextMessage textMessage = session.createTextMessage("DELETE:" + itemId);
+                return textMessage;
+            }
+        });
+        //返回成功
+        return FiaoJiaShuResult.ok();
+    }
+
+    @Override
+    public FiaoJiaShuResult instockItem(final TbItem item) {
+        //更改商品更新时间
+        item.setUpdated(new Date());
+        //1-正常，2-下架，3-删除
+        item.setStatus((byte) 2);
+        //删除缓存中的数据
+        try {
+            jedisClient.del(REDIS_ITEM_PRE + item.getId() + ":BASE");
+            jedisClient.del(REDIS_ITEM_PRE + item.getId() + ":DESC");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        itemMapper.updateByPrimaryKeySelective(item);
+        //发送一个商品删除消息
+        jmsTemplate.send(topicDestination, new MessageCreator() {
+            @Override
+            public Message createMessage(Session session) throws JMSException {
+                TextMessage textMessage = session.createTextMessage("DELETE:" + item.getId());
+                return textMessage;
+            }
+        });
+        return FiaoJiaShuResult.ok();
+    }
+
+    @Override
+    public FiaoJiaShuResult reshelfItem(final TbItem item) {
+        //更改商品更新时间
+        item.setUpdated(new Date());
+        //1-正常，2-下架，3-删除
+        item.setStatus((byte) 1);
+        itemMapper.updateByPrimaryKeySelective(item);
+        System.out.println(item.getId());
+        //发送一个商品修改消息
+        jmsTemplate.send(topicDestination, new MessageCreator() {
+            @Override
+            public Message createMessage(Session session) throws JMSException {
+                TextMessage textMessage = session.createTextMessage(item.getId() + "");
+                return textMessage;
+            }
+        });
         return FiaoJiaShuResult.ok();
     }
 }

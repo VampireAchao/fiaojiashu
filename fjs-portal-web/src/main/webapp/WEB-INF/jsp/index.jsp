@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="/css/index.css?v=2016071312">
 	<script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
 	<script type="text/javascript" src="/js/global_index.js"></script>
-<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+<style id="style-1-cropbar-clipper">
 .en-markup-crop-options {
     top: 18px !important;
     left: 50% !important;
@@ -39,56 +39,18 @@
 	<div class="indexW">
       <div id="index_slide" class="slide_wrap">
 		<ol>
-			<c:forEach items="${ad1List}" var="node" varStatus="status">
+			<c:forEach items="${CONTENT_SETINTERVAL}" var="node" varStatus="status">
 			<li>
-			  <a name="sfbest_hp_hp_focus_${status.index }" class="fore_pic trackref" href="${node.url }" target="_blank"> 
+			  <a name="sfbest_hp_hp_focus_${status.index }" class="fore_pic trackref" href="${node.url }" target="_blank">
 				<img id="lunbo_1" alt="${node.title }"	src="${node.pic }">
 			  </a>
 			</li>
 			</c:forEach>
-			<!-- <li>
-			  <a name="sfbest_hp_hp_focus_1" class="fore_pic trackref" href="/html/activity/1471934470.html" target="_blank"> 
-				<img id="lunbo_1" alt="8.30-9.5 月饼"	src="/images/html/aa472cb9f9624d22d1fcfd1c4dffbe42.jpg">
-			  </a>
-			</li>
-			<li><a name="sfbest_hp_hp_focus_2" class="fore_pic trackref"
-				href="/html/activity/1471514387.html" target="_blank"> <img
-					id="lunbo_2" alt="8.23-8.29大闸蟹"
-					src="/images/html/516e4d058d1d65a3506e179642297b2d.jpg">
-			</a></li>
-			<li><a name="sfbest_hp_hp_focus_3" class="fore_pic trackref"
-				href="/html/activity/1472204196.html" target="_blank"> <img
-					id="lunbo_3" alt="8.30-9.5 中秋综合"
-					src="/images/html/e886f76e03f7a3596033eb34ca362339.jpg">
-			</a></li>
-			<li><a name="sfbest_hp_hp_focus_4" class="fore_pic trackref"
-				href="/html/activity/1471934638.html" target="_blank"> <img
-					id="lunbo_4" alt="8.30-9.5 水果"
-					src="/images/html/757e35fab995b43c23b4396dc3ba4269.jpg">
-			</a></li>
-			<li><a name="sfbest_hp_hp_focus_5" class="fore_pic trackref"
-				href="/html/activity/1472114146.html" target="_blank"> <img
-					id="lunbo_5" alt="8.30-9.5粮油"
-					src="/images/html/1748dcf682d7f595012e4309695d71d9.jpg">
-			</a></li>
-			<li><a name="sfbest_hp_hp_focus_6" class="fore_pic trackref"
-				href="/html/activity/1472546864.html" target="_blank"> <img
-					id="lunbo_6" alt="8.30-9.5 酒水"
-					src="/images/html/de66a063548629c8d4e639523d8c9c6e.jpg">
-			</a></li>
-			<li><a name="sfbest_hp_hp_focus_7" class="fore_pic trackref"
-				href="/html/activity/1471935715.html" target="_blank"> <img
-					id="lunbo_7" alt="8.30-9.5牛肉"
-					src="/images/html/600c425e04b41f49e451d2fdbafb6e45.jpg">
-			</a></li>
-			<li><a name="sfbest_hp_hp_focus_8" class="fore_pic trackref"
-				href="/html/activity/1471944414.html" target="_blank"> <img
-					id="lunbo_8" alt="8.27-8.29一元换购"
-					src="/images/html/4dd7317569a06a451c1fe7762d6bf928.jpg">
-			</a></li> -->
+
 		</ol>
-	</div>      
-     <div class="rSide">	
+	</div>
+     <div class="rSide">
+
 		           <a name="sfbest_hp_hp_focus_right-ad1" class="a-img r-img1 trackref" href="/html/activity/1472440858.html" target="_blank">
           <img alt="8.30-9.5 月饼" src="/images/html/ddf3f66b114f3a3bfbbe0b47693cdbf0.jpg">
           <div class="rmask"></div>
@@ -97,26 +59,18 @@
           <img s="" alt="8.30-9.5" src="/images/html/51e357022c1f826f13211222831a4b13.jpg">
           <div class="rmask"></div>
           </a>
-		  
-		 			
+
+
           <a name="sfbest_hp_hp_focus_right-ad3" class="a-img r-img3 trackref" href="/html/activity/1473011294.html" target="_blank">
           <img alt="9.5中秋菜谱" src="/images/html/838abc2055e36f423701de255bbc9914.jpg">
           <div class="rmask"></div>
           </a>
-		   	  </div>   
+		   	  </div>
  	</div>
       <ul class="none" id="lunboNum">
-      			<c:forEach items="${ad1List }" varStatus="status">
+      			<c:forEach items="${CONTENT_SETINTERVAL }" varStatus="status">
       			<li class="<c:if test="${status.index==0 }">cur</c:if>">${status.index+1 }</li>
       			</c:forEach>
-		        <!-- <li class="cur">1</li>
-		        <li class="">2</li>
-		        <li class="">3</li>
-		        <li class="">4</li>
-		        <li class="">5</li>
-		        <li class="">6</li>
-		        <li class="">7</li>
-		        <li class="">8</li> -->
 		      </ul>
       <div class="indexbg" id="indexbg">
       <dl style="left: -1903px;">
@@ -257,14 +211,14 @@
 							<span><sup>￥</sup></span>22.2
 						</div></li>
 				</ul>
-			</div>   
-	<!-- 口碑甄选 end --> 
+			</div>
+	<!-- 口碑甄选 end -->
 	<div class="rSide1">
-			
+
     	<div class="rImg2">
       	<a name="sfbest_hp_hp_news_right-ad" class="trackref" href="/html/activity/1472464260.html" target="_blank"><img salt="9.2-9.5" src="/images/goods/751d2091c008c2a49c1934545730f041.jpg"></a>
    		</div>
-		 
+
         <div class="sfNews">
           <div class="rTitle"><h2>最新动态</h2><a href="/www/173/" target="_blank" class="more">更多&gt;</a></div>
           <ul>
@@ -279,7 +233,7 @@
 	<div class="clr"></div>
 </div>
 <!--楼层 start-->
-<div class="indexW mt2 full_ad" style="width:1190px;padding-left:10px;"><a name="sfbest_hp_hp_banner_1" class="trackref" href="/html/activity/1472461333.html" target="_blank"><img alt="8.30-9.5" class="lazy" 
+<div class="indexW mt2 full_ad" style="width:1190px;padding-left:10px;"><a name="sfbest_hp_hp_banner_1" class="trackref" href="/html/activity/1472461333.html" target="_blank"><img alt="8.30-9.5" class="lazy"
  src="/images/goods/8f42d6d2deead3da7d50c8a702a3c939.jpg" style="display: inline;"></a>
 	 </div>
 <div class="indexW mt2 ie6 fresh">
@@ -501,7 +455,7 @@
 		           </ul>
         <div class="clr"></div>
         <div class="rimg">
-		     
+
           <a name="sfbest_hp_hp_floor1_right-ad" class="ht1 trackref" href="/html/activity/1472547970.html" target="_blank"><img alt="8.30-9.5" class="lazy" data="http://001.sfimg.cn/web/1dd1130a/1dd1130a9c0103f6ec8a13fa13f27641.jpg" src="http://001.sfimg.cn/web/1dd1130a/1dd1130a9c0103f6ec8a13fa13f27641.jpg" style="display: inline;"></a>
           <div class="rbutton"><a href="/html/activity/1472547970.html" target="_blank"></a></div>
 		          </div>

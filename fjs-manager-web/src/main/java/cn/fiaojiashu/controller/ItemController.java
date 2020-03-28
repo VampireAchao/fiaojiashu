@@ -5,12 +5,11 @@ import cn.fiaojiashu.common.util.FiaoJiaShuResult;
 import cn.fiaojiashu.pojo.TbItem;
 import cn.fiaojiashu.pojo.TbItemDesc;
 import cn.fiaojiashu.service.ItemService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @ClassName: ItemController
@@ -64,6 +63,12 @@ public class ItemController {
         return result;
     }
 
+    /**
+     * 获取商品描述
+     *
+     * @param itemId
+     * @return
+     */
     @RequestMapping("/item/desc/{itemId}")
     @ResponseBody
     public FiaoJiaShuResult getTbItemDesc(@PathVariable Long itemId) {
@@ -71,6 +76,13 @@ public class ItemController {
         return FiaoJiaShuResult.ok(itemDesc);
     }
 
+    /**
+     * 修改商品
+     *
+     * @param item
+     * @param desc
+     * @return
+     */
     @RequestMapping(value = "/item/update", method = RequestMethod.POST)
     @ResponseBody
     public FiaoJiaShuResult updateItem(TbItem item, String desc) {
@@ -78,4 +90,67 @@ public class ItemController {
         return result;
     }
 
+    /**
+     * 删除商品
+     *
+     * @param ids
+     * @return
+     */
+    @RequestMapping(value = "/item/delete", method = RequestMethod.POST)
+    @ResponseBody
+    public FiaoJiaShuResult deleteItem(String ids) {
+        FiaoJiaShuResult result = new FiaoJiaShuResult(201);
+        if (StringUtils.isBlank(ids)) {
+            return result;
+        }
+        String[] strings = ids.split(",");
+        for (String string : strings) {
+            long id = Long.parseLong(string);
+            result = itemService.deleteItem(id);
+            if (result.getStatus() != 200) {
+                break;
+            }
+        }
+        return result;
+    }
+
+    @RequestMapping(value = "/item/instock", method = RequestMethod.POST)
+    @ResponseBody
+    public FiaoJiaShuResult instockItem(String ids) {
+        FiaoJiaShuResult result = new FiaoJiaShuResult(201);
+        if (StringUtils.isBlank(ids)) {
+            return result;
+        }
+        String[] strings = ids.split(",");
+        TbItem item = new TbItem();
+        for (String string : strings) {
+            long id = Long.parseLong(string);
+            item.setId(id);
+            result = itemService.instockItem(item);
+            if (result.getStatus() != 200) {
+                break;
+            }
+        }
+        return result;
+    }
+
+    @RequestMapping(value = "/item/reshelf", method = RequestMethod.POST)
+    @ResponseBody
+    public FiaoJiaShuResult reshelfItem(String ids) {
+        FiaoJiaShuResult result = new FiaoJiaShuResult(201);
+        if (StringUtils.isBlank(ids)) {
+            return result;
+        }
+        String[] strings = ids.split(",");
+        TbItem item = new TbItem();
+        for (String string : strings) {
+            long id = Long.parseLong(string);
+            item.setId(id);
+            result = itemService.reshelfItem(item);
+            if (result.getStatus() != 200) {
+                break;
+            }
+        }
+        return result;
+    }
 }

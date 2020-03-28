@@ -32,7 +32,7 @@ public class IndexController {
         //查询内容列表
         List<TbContent> ad1List = contentService.getContentListByCid(CONTENT_SETINTERVAL);
         //把结果传递给页面
-        model.addAttribute("ad1List",ad1List);
+        model.addAttribute("CONTENT_SETINTERVAL",ad1List);
         return "index";
     }
 }

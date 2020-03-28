@@ -1,5 +1,6 @@
 package cn.fiaojiashu.content.service;
 
+import cn.fiaojiashu.common.pojo.EasyUIDataGridResult;
 import cn.fiaojiashu.common.util.FiaoJiaShuResult;
 import cn.fiaojiashu.pojo.TbContent;
 
@@ -16,4 +17,13 @@ public interface ContentService {
 
     //根据内容分类id查询列表
     List<TbContent> getContentListByCid(long cid);
+
+    //根据内容分类id分页查询列表
+    EasyUIDataGridResult getContentListByCidPageRows(long cid, int page, int rows);
+
+    //根据id删除分类
+    FiaoJiaShuResult deleteContent(long id);
+
+    //添加内容
+    FiaoJiaShuResult updateContent(TbContent content);
 }

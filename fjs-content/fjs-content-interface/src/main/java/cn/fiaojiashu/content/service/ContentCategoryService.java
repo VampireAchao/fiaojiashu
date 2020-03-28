@@ -20,10 +20,26 @@ public interface ContentCategoryService {
     List<EasyUITreeNode> getContentCatList(long parentId);
 
     /**
-     * 添加内容列表
+     * 添加内容分类
      * @param parentId
      * @param name
      * @return
      */
     FiaoJiaShuResult addContentCategory(long parentId, String name);
+
+    /**
+     * 删除内容分类
+     * @param id
+     * @return
+     */
+    FiaoJiaShuResult removeContentCategory(long id);
+
+    /**
+     * 重命名内容分类
+     * @param id
+     * @param name
+     * @return
+     */
+    FiaoJiaShuResult renameContentCategory(long id, String name);
+
 }

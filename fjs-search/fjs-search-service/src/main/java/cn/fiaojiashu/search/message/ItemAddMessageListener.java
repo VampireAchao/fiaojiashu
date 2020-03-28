@@ -29,6 +29,14 @@ public class ItemAddMessageListener implements MessageListener {
             TextMessage textMessage = (TextMessage) message;
             String text = null;
             text = textMessage.getText();
+            if (text.contains("DELETE:")) {
+                text = text.substring(7);
+                //删除
+                solrServer.deleteById(text);
+                //提交
+                solrServer.commit();
+                return;
+            }
             Long itemId = new Long(text);
             //等待事务提交
             Thread.sleep(1000);
