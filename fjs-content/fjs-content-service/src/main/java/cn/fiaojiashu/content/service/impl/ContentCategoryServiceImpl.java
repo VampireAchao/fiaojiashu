@@ -93,10 +93,11 @@ public class ContentCategoryServiceImpl implements ContentCategoryService {
         Criteria criteria = example.createCriteria();
         criteria.andParentIdEqualTo(parentId);
         List<TbContentCategory> contentCategories = contentCategoryMapper.selectByExample(example);
-        if (contentCategories != null && contentCategories.size() != 0) {
+        if (contentCategories == null || contentCategories.size() == 0) {
             //如果没有则父节点的isparent属性改为false
             //根据id查询父节点
             TbContentCategory parent = new TbContentCategory();
+            parent.setId(parentId);
             parent.setIsParent(false);
             //更新父节点到数据库中
             contentCategoryMapper.updateByPrimaryKeySelective(parent);

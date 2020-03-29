@@ -35,4 +35,5 @@ public class IndexController {
         model.addAttribute("CONTENT_SETINTERVAL",ad1List);
         return "index";
     }
+
 }

@@ -6,13 +6,13 @@
 <div id="header">
   <div class="header_inner">
     <div class="logo">
-        
         <div class="index_topad" id="playLogo" style="">
             <a href="/html/activity/1472179566.html" target="_blank">
               <img src="/images/html/20160829181637762.gif">
             </a> 
         </div>
 		<a name="sfbest_hp_hp_head_logo" href="http://www.e3mall.cn" class="trackref logoleft">
+          <img src="/images/logo66.png" style="width: 200px;padding-left: 17px">
 		</a>
 		<div class="logo-text">
 			<img src="/images/html/logo_word.jpg">

@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [29/Mar/2020:15:52:39 +0800] "GET /page/login?redirect=http://localhost:8092/order/order-cart.html HTTP/1.1" 200 10175 http-bio-8088-exec-1 1775
+0:0:0:0:0:0:0:1 - - [29/Mar/2020:15:52:39 +0800] "GET /favicon.ico HTTP/1.1" 404 949 http-bio-8088-exec-2 7
+0:0:0:0:0:0:0:1 - - [29/Mar/2020:15:52:44 +0800] "POST /user/login HTTP/1.1" 200 82 http-bio-8088-exec-4 2542
+0:0:0:0:0:0:0:1 - - [29/Mar/2020:15:52:45 +0800] "GET /images/productinfo.png HTTP/1.1" 404 949 http-bio-8088-exec-5 6
+0:0:0:0:0:0:0:1 - - [29/Mar/2020:15:53:54 +0800] "GET /user/token/992d8f47-c4ec-44e7-a62b-c9b8e734cd3b?callback=jsonp1585468434195 HTTP/1.1" 200 208 http-bio-8088-exec-7 86
+0:0:0:0:0:0:0:1 - - [29/Mar/2020:15:53:55 +0800] "GET /user/token/992d8f47-c4ec-44e7-a62b-c9b8e734cd3b?callback=jsonp1585468435520 HTTP/1.1" 200 208 http-bio-8088-exec-8 12
+0:0:0:0:0:0:0:1 - - [29/Mar/2020:16:12:28 +0800] "GET /user/token/992d8f47-c4ec-44e7-a62b-c9b8e734cd3b?callback=jsonp1585469547539 HTTP/1.1" 200 208 http-bio-8088-exec-10 340
+0:0:0:0:0:0:0:1 - - [29/Mar/2020:16:15:48 +0800] "GET /user/token/992d8f47-c4ec-44e7-a62b-c9b8e734cd3b?callback=jsonp1585469748449 HTTP/1.1" 200 208 http-bio-8088-exec-2 57
+0:0:0:0:0:0:0:1 - - [29/Mar/2020:16:45:58 +0800] "GET /user/token/992d8f47-c4ec-44e7-a62b-c9b8e734cd3b?callback=jsonp1585471557368 HTTP/1.1" 200 100 http-bio-8088-exec-4 425
