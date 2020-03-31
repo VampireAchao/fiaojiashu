@@ -38,7 +38,7 @@
 .cartPromoTit ul li.mb5{margin-bottom:5px;}
 .cartPromoTit .j{float:left;line-height:22px;}
 .cartPromoTit .cart-j-btn{float:left;}
-.cart-j-btn{display:inline-block;height:20px;line-height:20px;padding:0 10px;border:1px solid #dbdbdb;background-color:#ffffff;color:#669900;border-radius:2px;}
+.cart-j-btn{display:inline-block;height:20px;line-height:20px;padding:0 10px;border:1px solid #dbdbdb;background-color:#ffffff;color:#000000;border-radius:2px;}
 .cart-j-btn:hover{background-color:#69af05;color:#ffffff;border:1px solid #69af05;text-decoration:none;}
 .cartPInfo{overflow:hidden;zoom:1;padding:20px 0;border-bottom:1px solid #EBF7EF;}
 .pItem{float:left;color:#6B6B6B;text-align:center;line-height:20px;}
@@ -85,7 +85,7 @@ input.amount{width:25px;height:14px;line-height:14px;margin:0 2px;display:inline
 .cartJsuanTips{font-size:12px;font-weight:normal;color:#6B6B6B;}
 .cartFareTxt{color:#EA5404}
 .goshop{ background:url(/images/header.png) no-repeat 0 -225px;height:28px;width:73px;border:1px solid #a5cf69;color:#666666;margin:0 10px 0 0;cursor:pointer}
-.goshop:hover{color:#669900;}
+.goshop:hover{color:#000000;}
 .jiesuan{background:#6e9b0c;height:45px;width:150px;border:0;color:#FFF;text-align:center;font-size:16px;font-weight:bold;cursor:pointer;}
 .jiesuan:hover{background:url(/images/productinfo.png) no-repeat 0 -124px;}
 .jiesuan.haitao{background:#fd7641;margin-right:10px;}

@@ -1974,38 +1974,38 @@ $(document).ready(function(){
 function timeFun(){
 	//倒计时
 	if(nowtimes >= 1414944000000 && nowtimes<=1415203199000){
-		$(".q_ticket").css("background","url(http://p.e3mall.cn/gold/images/20141105/20141105153125147.jpg) no-repeat center");
-		$(".q_ticket a").attr('href','http://www.e3mall.cn/html/activity/1414059663.html');
+		$(".q_ticket").css("background","url(http://p.fiaojiashu.cn/gold/images/20141105/20141105153125147.jpg) no-repeat center");
+		$(".q_ticket a").attr('href','http://www.fiaojiashu.cn/html/activity/1414059663.html');
 		$(".q_ticket").show();
 		ssytimechange(1415203199000);
 	}else if(nowtimes >= 1415462400000 && nowtimes<=1415807999000){
-		$(".q_ticket").css("background","url(http://p.e3mall.cn/gold/images/20141110/20141110183526651.jpg) no-repeat center");
-		$(".q_ticket a").attr('href','http://www.e3mall.cn/html/activity/1414059592.html');
+		$(".q_ticket").css("background","url(http://p.fiaojiashu.cn/gold/images/20141110/20141110183526651.jpg) no-repeat center");
+		$(".q_ticket a").attr('href','http://www.fiaojiashu.cn/html/activity/1414059592.html');
 		$(".q_ticket").show();
 		ssytimechange(1415807999000);
 	}
 
 	//LOGO右
 	if(nowtimes >= 1442246400000 && nowtimes<=1443456000000){
-		$('.index_promo').html('<a href="/html/activity/1439445027.html" target="_blank"><img src="http://p.e3mall.cn/gold/images/20150914/20150914154053657.gif"></a>');
+		$('.index_promo').html('<a href="/html/activity/1439445027.html" target="_blank"><img src="http://p.fiaojiashu.cn/gold/images/20150914/20150914154053657.gif"></a>');
 		$('.index_promo').show();
 	}else if(nowtimes >= 1421337600000 && nowtimes<=1421596799000){
-		$('.index_promo').html('<a href="/html/activity/1421129064.html" target="_blank"><img src="http://p.e3mall.cn/gold/images/20150115/20150115142344692.gif"></a>');
+		$('.index_promo').html('<a href="/html/activity/1421129064.html" target="_blank"><img src="http://p.fiaojiashu.cn/gold/images/20150115/20150115142344692.gif"></a>');
 		$('.index_promo').show();
 	}else if(nowtimes >=1421596800000  && nowtimes<=1421942399000){
-		$('.index_promo').html('<a href="/html/activity/1421129153.html" target="_blank"><img src="http://p.e3mall.cn/gold/images/20150115/20150115142410434.gif"></a>');
+		$('.index_promo').html('<a href="/html/activity/1421129153.html" target="_blank"><img src="http://p.fiaojiashu.cn/gold/images/20150115/20150115142410434.gif"></a>');
 		$('.index_promo').show();
 	}else if(nowtimes >=1421942400000  && nowtimes<=1422287999000){
-		$('.index_promo').html('<a href="/html/activity/1421129191.html" target="_blank"><img src="http://p.e3mall.cn/gold/images/20150115/20150115142446150.gif"></a>');
+		$('.index_promo').html('<a href="/html/activity/1421129191.html" target="_blank"><img src="http://p.fiaojiashu.cn/gold/images/20150115/20150115142446150.gif"></a>');
 		$('.index_promo').show();
 	}else if(nowtimes >=1422374400000  && nowtimes<=1422547199000){
-		$('.index_promo').html('<a href="/html/activity/1421129223.html" target="_blank"><img src="http://p.e3mall.cn/gold/images/20150115/20150115142512700.gif"></a>');
+		$('.index_promo').html('<a href="/html/activity/1421129223.html" target="_blank"><img src="http://p.fiaojiashu.cn/gold/images/20150115/20150115142512700.gif"></a>');
 		$('.index_promo').show();
 	}else if(nowtimes >=1422547200000  && nowtimes<=1423929599000){
-		$('.index_promo').html('<a href="/html/activity/1422341986.html" target="_blank"><img src="http://p.e3mall.cn/gold//images/20150129/20150129142152888.gif"></a>');
+		$('.index_promo').html('<a href="/html/activity/1422341986.html" target="_blank"><img src="http://p.fiaojiashu.cn/gold//images/20150129/20150129142152888.gif"></a>');
 		$('.index_promo').show();
 	}else if(nowtimes >=1430755200000  && nowtimes<=1433087999000){
-		$('.index_promo').html('<a href="/yup/264/7225.html" target="_blank"><img src="http://p.e3mall.cn/gold/images/20150504/20150504153349695.gif"></a>');
+		$('.index_promo').html('<a href="/yup/264/7225.html" target="_blank"><img src="http://p.fiaojiashu.cn/gold/images/20150504/20150504153349695.gif"></a>');
 		$('.index_promo').show();
 	}
 
@@ -2016,10 +2016,10 @@ function timeFun(){
   
   //右侧浮动
 	if(nowtimes >=1421337600000 && nowtimes<=1439568000000){
-		$('.index_rfloat').html('<a href="http://survey4.iclick.cn/survey/20150106/default.asp?fid=12&t=y2i71cmh" target="_blank" rel="nofollow"><img src="http://p.e3mall.cn/gold/images/20150115/20150115142627540.jpg"></a><div class="J_rclose">关闭</div>');
+		$('.index_rfloat').html('<a href="http://survey4.iclick.cn/survey/20150106/default.asp?fid=12&t=y2i71cmh" target="_blank" rel="nofollow"><img src="http://p.fiaojiashu.cn/gold/images/20150115/20150115142627540.jpg"></a><div class="J_rclose">关闭</div>');
 		$('.index_rfloat').show();
   }else if(nowtimes >=1429200000000 && nowtimes<=1430064000000){
-		$('.index_rfloat').html('<a href="/html/activity/1428992676.html" target="_blank"><img src="http://p.e3mall.cn/gold/images/20150415/20150415172520852.png"></a><div class="J_rclose">关闭</div>');
+		$('.index_rfloat').html('<a href="/html/activity/1428992676.html" target="_blank"><img src="http://p.fiaojiashu.cn/gold/images/20150415/20150415172520852.png"></a><div class="J_rclose">关闭</div>');
 		$('.index_rfloat').show();
   }
 	//右侧广告位关闭
@@ -2176,11 +2176,11 @@ function qiangGouIndex(){
 					styleId = temp.aid;
 					if(temp.isStork){
 						$nowCon += "<li id='cx_q_"+temp.product_id+"' eid='q_"+temp.product_id+"' goods='"+temp.product_id+"'>";
-						$nowCon += '<div class="pImg"><a title="'+temp.title+'" target="_blank" href="'+temp.url + trackref + '"><img onerror="this.src=\'http://i.e3mall.cn/html/images/150pic.jpg\'" alt="'+temp.title+'" src="'+temp.img+'"/></a></div>';
+						$nowCon += '<div class="pImg"><a title="'+temp.title+'" target="_blank" href="'+temp.url + trackref + '"><img onerror="this.src=\'http://i.fiaojiashu.cn/html/images/150pic.jpg\'" alt="'+temp.title+'" src="'+temp.img+'"/></a></div>';
 						$nowCon += '<div class="title-a"><a title="'+temp.title+'" target="_blank" href="'+temp.url+ trackref +'">'+temp.title+'</a></div>';
 						$nowCon += '<div class="price"><b>￥'+temp.qgprice+'</b><span><a class="rushBuy" href="javascript:void(0);" data_url="'+temp.img+'" pid="'+temp.product_id+'">抢购</a></span></div>';
 					}else{
-						$nowCon += '<li class="tbover"><div><a title="'+temp.title+'" target="_blank" href="'+temp.url + trackref + '"><img onerror="this.src=\'http://i.e3mall.cn/html/images/150pic.jpg\'" alt="'+temp.title+'" src="'+temp.img+'"/><span class="yover"></span></a></div>';
+						$nowCon += '<li class="tbover"><div><a title="'+temp.title+'" target="_blank" href="'+temp.url + trackref + '"><img onerror="this.src=\'http://i.fiaojiashu.cn/html/images/150pic.jpg\'" alt="'+temp.title+'" src="'+temp.img+'"/><span class="yover"></span></a></div>';
 						$nowCon += '<div class="title-a"><a title="'+temp.title+'" target="_blank" href="'+temp.url+ trackref +'">'+temp.title+'</a></div>';
 						$nowCon += '<div class="price"><b>￥'+temp.qgprice+'</b><span>抢购</span></div>';
 					}
@@ -2188,7 +2188,7 @@ function qiangGouIndex(){
 					$nowCon += '<script>timechange("now",'+ temp.stopTime +');</script>';
 				}else{
 					$nowCon += '<li class="beginning">';
-					$nowCon += '<div class="pImg"><img src="http://p.e3mall.cn/article/1411457535.jpg" alt="" /></div>';
+					$nowCon += '<div class="pImg"><img src="http://p.fiaojiashu.cn/article/1411457535.jpg" alt="" /></div>';
 					$nowCon += '<div class="title-d">敬请期待</div>';
 				    $nowCon += '</li>';
 				}
@@ -2210,14 +2210,14 @@ function qiangGouIndex(){
 				if(temp){	
 					styleId = temp.aid;
 					$nextCon += "<li>";
-					$nextCon += '<div class="pImg"><a title="'+temp.title+'" target="_blank" href="'+temp.url+trackref+'"><img onerror="this.src=\'http://i.e3mall.cn/html/images/150pic.jpg\'" alt="'+temp.title+'" src="'+temp.img+'"></a></div>';
+					$nextCon += '<div class="pImg"><a title="'+temp.title+'" target="_blank" href="'+temp.url+trackref+'"><img onerror="this.src=\'http://i.fiaojiashu.cn/html/images/150pic.jpg\'" alt="'+temp.title+'" src="'+temp.img+'"></a></div>';
 					$nextCon += '<div class="title-a"><a title="'+temp.title+'" target="_blank" href="'+temp.url+trackref+'">'+temp.title+'</a></div>';
 					$nextCon += '<div class="price"><b>￥'+temp.qgprice+'</b><span class="yulan"><a target="_blank" href="'+temp.url+trackref+'">看看</a></span></div>';
                     $nextCon += '</li>';
 					$nextCon += '<script>timechange("next",'+ temp.startTime +');</script>';
 				}else{
 					$nextCon += '<li class="beginning">';
-					$nextCon += '<div class="pImg"><img src="http://p.e3mall.cn/article/1411457535.jpg" alt="" /></div>';
+					$nextCon += '<div class="pImg"><img src="http://p.fiaojiashu.cn/article/1411457535.jpg" alt="" /></div>';
 					$nextCon += '<div class="title-d">敬请期待</div>';
 				    $nextCon += '</li>';
 				}

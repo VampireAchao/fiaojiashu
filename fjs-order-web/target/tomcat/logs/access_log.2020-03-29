@@ -1,7 +1,0 @@
-0:0:0:0:0:0:0:1 - - [29/Mar/2020:15:52:35 +0800] "GET /order/order-cart.html HTTP/1.1" 302 - http-bio-8092-exec-1 305
-0:0:0:0:0:0:0:1 - - [29/Mar/2020:15:52:54 +0800] "GET /order/order-cart.html HTTP/1.1" 200 20691 http-bio-8092-exec-4 7809
-0:0:0:0:0:0:0:1 - - [29/Mar/2020:15:52:54 +0800] "GET /js/cookie.js?v=20160416222 HTTP/1.1" 304 - http-bio-8092-exec-6 12
-0:0:0:0:0:0:0:1 - - [29/Mar/2020:15:52:54 +0800] "GET /js/e3mall.js HTTP/1.1" 304 - http-bio-8092-exec-7 2
-0:0:0:0:0:0:0:1 - - [29/Mar/2020:15:52:54 +0800] "GET /js/order.js?v=20160713 HTTP/1.1" 304 - http-bio-8092-exec-8 3
-0:0:0:0:0:0:0:1 - - [29/Mar/2020:15:52:56 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8092-exec-2 3
-0:0:0:0:0:0:0:1 - - [29/Mar/2020:15:53:19 +0800] "POST /order/create.html HTTP/1.1" 200 19341 http-bio-8092-exec-5 3096

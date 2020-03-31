@@ -118,9 +118,9 @@
 .catlist h3{height:34px;line-height:34px;padding:0 7px 0 10px;font:14px/34px 宋体;font-weight:bold;color:#6d6d6d;cursor:pointer;overflow:hidden;}
 .catlist li{height: 20px;line-height:20px;overflow: hidden;padding: 3px 15px 3px 30px;width: 144px;color:#6f6f6f;}
 .catlist li a:link,.catlist li a:visited{color:#6f6f6f;}
-.catlist li a:hover{color:#669900;text-decoration:none;}
+.catlist li a:hover{color:#000000;text-decoration:none;}
 .catlist h3 span{font-size:12px;color:#999999;}
-.catlist h3 a:hover{color:#669900;text-decoration:none;}
+.catlist h3 a:hover{color:#000000;text-decoration:none;}
 .catlist h3 a.curr:link,.catlist h3 a.curr:visited,.catlist h3 a.curr:link span,.catlist h3 a.curr:visited span{color:#EA5404;}
 .catlist ul{display:none;}
 .catlist .curr ul{display:block;}

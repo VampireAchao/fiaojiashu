@@ -1,3 +1,0 @@
-0:0:0:0:0:0:0:1 - - [29/Mar/2020:15:51:08 +0800] "GET /search.html?keyword=%E6%89%8B%E5%8A%9E HTTP/1.1" 200 85099 http-bio-8085-exec-1 6098
-0:0:0:0:0:0:0:1 - - [29/Mar/2020:15:51:08 +0800] "GET /js/e3mall.js HTTP/1.1" 304 - http-bio-8085-exec-2 8
-0:0:0:0:0:0:0:1 - - [29/Mar/2020:15:51:08 +0800] "GET /js/cookie.js?v=20160416222 HTTP/1.1" 304 - http-bio-8085-exec-3 2

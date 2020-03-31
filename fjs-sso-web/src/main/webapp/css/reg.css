@@ -289,7 +289,7 @@ input::-ms-reveal{display: none;}
 .regMb18{ margin-bottom:18px;}
 .regMb30{ margin-bottom:30px;}
 .ui-reg-tip{padding:15px 10px 10px 45px;border-top:1px dotted #dcdcdc;position:relative;left:-30px;width:930px;background:url(/images/reg_tip.png) no-repeat 25px 16px;}
-.ui-reg-tip a:link,.ui-reg-tip a:visited,.ui-reg-tip a:hover{color:#669900;}
+.ui-reg-tip a:link,.ui-reg-tip a:visited,.ui-reg-tip a:hover{color:#000000;}
 
 
 /*推荐有奖相关css*/

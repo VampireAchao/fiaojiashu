@@ -275,8 +275,8 @@ h4.t{line-height:26px;font-size:12px;}
 .inputArea.inputTips{color:#c2c2c2;}
 .giverItem{display:none;position:absolute;border:1px solid #999999;padding:15px;width:300px;top:0;left:150px;background-color:white;line-height:24px;}
 .new-color{ color:#ff3d3d;}
-.new-pwd-link{ color:#669900; text-decoration:none;}
-.new-pwd-link:hover{ color:#669900; text-decoration:underline;}
+.new-pwd-link{ color:#000000; text-decoration:none;}
+.new-pwd-link:hover{ color:#000000; text-decoration:underline;}
 .payment-new0 label, .payment-new0 .payment_pwdLink{ display:inline-block; line-height:24px;}
 .payment-new0 .payment_pwd{ width:147px; height:24px; line-height:24px; border-left:2px solid #dcdcdc; border-top:2px solid #dcdcdc; border-right:1px solid #dcdcdc; border-bottom:1px solid #dcdcdc; padding:0 5px; margin-right:10px;}
 .payment-new0 .payment_pwdLink{ color:#969696; text-decoration:none;}

@@ -109,10 +109,10 @@ $(function(){
         delay: 50
     });
 	if($(".topMenu .d2 .dd").length){
-		$(".topMenu .d2 .dd").append('<div class="client-promo"><a href="http://app.e3mall.cn#trackref=sfbest_Uhead_Uhead_head_app2" target="_blank" rel="nofollow">先摇券 后买单</a></div>');
+		$(".topMenu .d2 .dd").append('<div class="client-promo"><a href="http://app.fiaojiashu.cn#trackref=sfbest_Uhead_Uhead_head_app2" target="_blank" rel="nofollow">先摇券 后买单</a></div>');
 	}
 	if($(".f_ios").length){
-		$(".f_ios").find("li:first").html('<a target="_blank" href="http://app.e3mall.cn">手机客户端</a>');
+		$(".f_ios").find("li:first").html('<a target="_blank" href="http://app.fiaojiashu.cn">手机客户端</a>');
 	}
 	var win_all = $("#header").width();
 	var ZnowTime = new Date().getTime();
@@ -123,10 +123,10 @@ $(function(){
 	}
 	//右侧浮动
 	if(ZnowTime >= 1414771200000 && ZnowTime<=1416239999000){
-		$('.index_rfloat').html('<a href="/html/activity/1414059494.html" target="_blank"><img src="http://p.e3mall.cn/gold/images/20141113/20141113111801929.jpg"></a><div class="J_rclose">关闭</div>');
+		$('.index_rfloat').html('<a href="/html/activity/1414059494.html" target="_blank"><img src="http://p.fiaojiashu.cn/gold/images/20141113/20141113111801929.jpg"></a><div class="J_rclose">关闭</div>');
 		$('.index_rfloat').show();
 	}
-	$('.app-android').attr('href','http://android.e3mall.cn/sfandroid');
+	$('.app-android').attr('href','http://android.fiaojiashu.cn/sfandroid');
 	//右侧广告位关闭
 	if ($(".index_rfloat").length){$(".J_rclose").click(function(){$(".index_rfloat").hide();});}
 	//隐藏会员俱乐部入口

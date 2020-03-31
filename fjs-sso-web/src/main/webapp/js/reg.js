@@ -213,9 +213,9 @@ var ckmem =function(isCk){
         $.post("/ajax/verifmobile/",{"name":"userMobile","param":val},function(data){
             if(data!="y"){
                 if(data.indexOf("请直接登录")>=0){
-                    var newData = comMsg(data).replace("请直接登录","<a href='/' style='color:#669900'>请直接登录</a>");
+                    var newData = comMsg(data).replace("请直接登录","<a href='/' style='color:#000000'>请直接登录</a>");
                     if(data.indexOf("覅甲蜀速运")>-1){
-                        newData = "该手机在覅甲蜀速运已注册，请<a href='/' style='color:#669900'>直接登录></a>或<a href='/reg/findpass/?returnUrl=http://www.e3mall.cn/' target='_blank' style='color:#669900'>找回密码></a>";
+                        newData = "该手机在覅甲蜀速运已注册，请<a href='/' style='color:#000000'>直接登录></a>或<a href='/reg/findpass/?returnUrl=http://www.fiaojiashu.cn/' target='_blank' style='color:#000000'>找回密码></a>";
                     }
                     $("#"+MailMId).parent().attr("class","").addClass("regM errorBorder").next().attr("class","");
                     $("#"+MailMErrId).attr("class","reg_error").html(newData);
@@ -245,9 +245,9 @@ var ckmem =function(isCk){
      $.post("/ajax/verifemails/",{"name":"outemail","param":val},function(data){
      if(data!="y"){
      if(data.indexOf("请直接登录")>=0){
-     var newData = comMsg(data).replace("请直接登录","<a href='/' style='color:#669900'>请直接登录</a>");
+     var newData = comMsg(data).replace("请直接登录","<a href='/' style='color:#000000'>请直接登录</a>");
      if(data.indexOf("覅甲蜀速运")>-1){
-     newData = "该邮箱在覅甲蜀速运已注册，请<a href='/' style='color:#669900'>直接登录></a>或<a href='/reg/findpass/?returnUrl=http://www.e3mall.cn/' target='_blank' style='color:#669900'>找回密码></a>";
+     newData = "该邮箱在覅甲蜀速运已注册，请<a href='/' style='color:#000000'>直接登录></a>或<a href='/reg/findpass/?returnUrl=http://www.fiaojiashu.cn/' target='_blank' style='color:#000000'>找回密码></a>";
      }
      $("#"+MailMId).parent().attr("class","").addClass("regM errorBorder").next().attr("class","");
      $("#"+MailMErrId).attr("class","reg_error").html(newData);
@@ -609,7 +609,7 @@ var ckcpyname =function(isCk){
         if(data!="y"){
             if(data.indexOf("请直接登录")>=0){
                 $("#"+cpyUserNameId).parent().attr("class","regM errorBorder").next().attr("class","");
-                var 	msg_new =comMsg(data).replace("请直接登录","<a href='/' style='color:#669900'>请直接登录</a>");
+                var 	msg_new =comMsg(data).replace("请直接登录","<a href='/' style='color:#000000'>请直接登录</a>");
                 $("#"+cpyUserNameErrId).attr("class","reg_error3 f-color").html(msg_new);
             }else{
                 showcpyError(cpyUserNameId,cpyUserNameErrId,data);
@@ -720,9 +720,9 @@ var ckcpymobile =function(){
         if(data!="y"){
             if(data.indexOf("请直接登录")>=0){
                 $("#"+cpyMobileId).parent().attr("class","regM errorBorder").next().attr("class","");
-                var msg_new =comMsg(data).replace("请直接登录","<a href='/' style='color:#669900'>请直接登录</a>");
+                var msg_new =comMsg(data).replace("请直接登录","<a href='/' style='color:#000000'>请直接登录</a>");
                 if(data.indexOf("覅甲蜀速运")>-1){
-                    msg_new = comMsg("该手机在覅甲蜀速运已注册，请<a href='/' style='color:#669900'>直接登录></a>或<a href='/reg/findpass/?returnUrl=http://www.e3mall.cn/' target='_blank' style='color:#669900'>找回密码></a>");
+                    msg_new = comMsg("该手机在覅甲蜀速运已注册，请<a href='/' style='color:#000000'>直接登录></a>或<a href='/reg/findpass/?returnUrl=http://www.fiaojiashu.cn/' target='_blank' style='color:#000000'>找回密码></a>");
                 }
                 $("#"+cpyMobileErrId).attr("class","reg_error3 f-color").html(msg_new);
             }else{
@@ -752,9 +752,9 @@ var ckcpymail =function(){
         if(data!="y"){
             if(data.indexOf("请直接登录")>=0){
                 $("#"+cpyEmailId).parent().attr("class","regM errorBorder").next().attr("class","");
-                var msg_new =comMsg(data).replace("请直接登录","<a href='/' style='color:#669900'>请直接登录</a>");
+                var msg_new =comMsg(data).replace("请直接登录","<a href='/' style='color:#000000'>请直接登录</a>");
                 if(data.indexOf("覅甲蜀速运")>-1){
-                    msg_new = comMsg("该邮箱在覅甲蜀速运已注册，请<a href='/' style='color:#669900'>直接登录></a>或<a href='/reg/findpass/?returnUrl=http://www.e3mall.cn/' target='_blank' style='color:#669900'>找回密码></a>");
+                    msg_new = comMsg("该邮箱在覅甲蜀速运已注册，请<a href='/' style='color:#000000'>直接登录></a>或<a href='/reg/findpass/?returnUrl=http://www.fiaojiashu.cn/' target='_blank' style='color:#000000'>找回密码></a>");
                 }
                 $("#"+cpyEmailErrId).attr("class","reg_error3 f-color").html(msg_new);
             }else{

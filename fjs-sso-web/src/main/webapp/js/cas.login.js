@@ -3,7 +3,7 @@ var uname;
 function getUserName(loginName){
 	      uname = $("#fm1 input[name='username']");
 			$.ajax({
-				url:'https://passport.e3mall.cn/ajax/Ydajax?nickname='+loginName,
+				url:'https://passport.fiaojiashu.cn/ajax/Ydajax?nickname='+loginName,
 				dataType : "jsonp",//数据类型为jsonp  
 				async : false,
 				jsonp:"callback",

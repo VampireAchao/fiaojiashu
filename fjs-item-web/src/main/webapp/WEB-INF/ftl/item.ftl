@@ -5,8 +5,8 @@
     <title>${item.title } - 覅甲蜀商城</title>
     <script>
         var _SF_CFG = {
-            www_url: 'http://www.e3mall.cn',
-            m_url: 'http://m.e3mall.cn',
+            www_url: 'http://www.fiaojiashu.cn',
+            m_url: 'http://m.fiaojiashu.cn',
             productId:${item.id},
             number: 1600229585,
             minBuy: 1,
@@ -22,9 +22,9 @@
             sfprice: 0,
             price: 0,
             warehouse: 0,
-            homeurl: 'http://home.e3mall.cn',
-            staticurl: 'http://i.e3mall.cn/html',
-            passporturl: 'https://passport.e3mall.cn',
+            homeurl: 'http://home.fiaojiashu.cn',
+            staticurl: 'http://i.fiaojiashu.cn/html',
+            passporturl: 'https://passport.fiaojiashu.cn',
             businessModel: 3,
             commentType: 0
         };
@@ -61,7 +61,7 @@
     <div class="breadcrumb"><strong><a href="/food/6-0-0-0-0-2-0-0-0-0-0.html">休闲食品</a></strong><span> &gt; <a
                     href="/food/7321-0-0-0-0-2-0-0-0-0-0.html">月饼</a> &gt; <a
                     href="/food/7331-0-0-0-0-2-0-0-0-0-0.html">其他月饼</a> &gt; <a
-                    href="http://www.e3mall.cn/pinpai/7331-10863.html">我是花吃</a> &gt; 我是花吃 我是花吃鲜花月饼团圆礼盒390g</span></div>
+                    href="http://www.fiaojiashu.cn/pinpai/7331-10863.html">我是花吃</a> &gt; 我是花吃 我是花吃鲜花月饼团圆礼盒390g</span></div>
 </div>
 <div class="pWrap">
     <div class="productIntro">
@@ -1914,7 +1914,7 @@
                                 <script type="text/javascript">
                                     jQuery('#qrcodeTableBig1').qrcode({
                                         render: "table",
-                                        text: "http://www.e3mall.cn/html/products/230/1600229585.html",
+                                        text: "http://www.fiaojiashu.cn/html/products/230/1600229585.html",
                                         width: "124",
                                         height: "124"
                                     });
@@ -1989,7 +1989,7 @@
             </div>
             <div class="pdetail">
                 <ul>
-                    <li>品牌：<span><a href="http://www.e3mall.cn/pinpai/7331-10863.html" title="我是花吃"
+                    <li>品牌：<span><a href="http://www.fiaojiashu.cn/pinpai/7331-10863.html" title="我是花吃"
                                     target="_blank">我是花吃</a></span></li>
                     <li>产地：<span><a href="/food/7331-0-45-0-0-2-0-0-0-0-0.html" title="中国" target="_blank">中国</a></span>
                     </li>
@@ -2035,7 +2035,7 @@
                                     class="comment-total-sf">0</font>)</b></a></li>
             </ul>
             <div id="add-cart-r-btn-sf" class="p-btn"><a href="javascript:void(0);"
-                                                         data_url="http://p02.e3mall.cn/2016/1600229585/thumb_1600229585_1_1.jpg"
+                                                         data_url="http://p02.fiaojiashu.cn/2016/1600229585/thumb_1600229585_1_1.jpg"
                                                          pid="${item.id}">加入购物车</a></div>
         </div>
         <div class="clear" id="flow-layer-sf"></div>
@@ -2058,7 +2058,7 @@
             </div>
             <div class="pJiucuo">
                 如果您发现商品信息存在问题，<a target="_blank"
-                                 href="http://www.e3mall.cn/ProductCorrection/ProductCorrection/pId/${item.id}"
+                                 href="http://www.fiaojiashu.cn/ProductCorrection/ProductCorrection/pId/${item.id}"
                                  rel="nofollow">欢迎纠错</a>
             </div>
             <div class="product_info">${itemDesc.itemDesc }</div>
@@ -2098,7 +2098,7 @@
                             <div>
                                 <a class="pbtn2" href="javascript:Goods.gotoPl()" rel="nofollow">马上评价</a><span
                                         class="showMore"><a target="_blank"
-                                                            href="http://www.e3mall.cn/html/article/140/133.html"
+                                                            href="http://www.fiaojiashu.cn/html/article/140/133.html"
                                                             rel="nofollow">[如何获取积分]</a></span>
                             </div>
                         </div>
@@ -2131,33 +2131,33 @@
             <h2 class="t">相关品牌</h2>
             <ul class="pClass">
                 <li><a target="_blank"
-                       href="http://www.e3mall.cn/pinpai/7331-10949.html#sfbest_item_1600229585_brand_1"
+                       href="http://www.fiaojiashu.cn/pinpai/7331-10949.html#sfbest_item_1600229585_brand_1"
                        title="半岛月饼">半岛月饼</a><a target="_blank"
-                                               href="http://www.e3mall.cn/pinpai/7331-3342.html#sfbest_item_1600229585_brand_2"
+                                               href="http://www.fiaojiashu.cn/pinpai/7331-3342.html#sfbest_item_1600229585_brand_2"
                                                title="元朗荣华">元朗荣华</a><a target="_blank"
-                                                                       href="http://www.e3mall.cn/pinpai/7331-2241.html#sfbest_item_1600229585_brand_3"
+                                                                       href="http://www.fiaojiashu.cn/pinpai/7331-2241.html#sfbest_item_1600229585_brand_3"
                                                                        title="奇华">奇华</a><a target="_blank"
-                                                                                           href="http://www.e3mall.cn/pinpai/7331-6626.html#sfbest_item_1600229585_brand_4"
+                                                                                           href="http://www.fiaojiashu.cn/pinpai/7331-6626.html#sfbest_item_1600229585_brand_4"
                                                                                            title="迪士尼">迪士尼</a><a
                             target="_blank"
-                            href="http://www.e3mall.cn/pinpai/7331-10805.html#sfbest_item_1600229585_brand_5"
+                            href="http://www.fiaojiashu.cn/pinpai/7331-10805.html#sfbest_item_1600229585_brand_5"
                             title="宜芝多">宜芝多</a><a target="_blank"
-                                                  href="http://www.e3mall.cn/pinpai/7331-9347.html#sfbest_item_1600229585_brand_6"
+                                                  href="http://www.fiaojiashu.cn/pinpai/7331-9347.html#sfbest_item_1600229585_brand_6"
                                                   title="日田食品">日田食品</a><a target="_blank"
-                                                                          href="http://www.e3mall.cn/pinpai/7331-10765.html#sfbest_item_1600229585_brand_7"
+                                                                          href="http://www.fiaojiashu.cn/pinpai/7331-10765.html#sfbest_item_1600229585_brand_7"
                                                                           title="欧美香" style="display: none;">欧美香</a><a
                             target="_blank"
-                            href="http://www.e3mall.cn/pinpai/7331-10853.html#sfbest_item_1600229585_brand_8"
+                            href="http://www.fiaojiashu.cn/pinpai/7331-10853.html#sfbest_item_1600229585_brand_8"
                             title="零食多" style="display: none;">零食多</a><a target="_blank"
-                                                                         href="http://www.e3mall.cn/pinpai/7331-10863.html#sfbest_item_1600229585_brand_9"
+                                                                         href="http://www.fiaojiashu.cn/pinpai/7331-10863.html#sfbest_item_1600229585_brand_9"
                                                                          title="我是花吃" style="display: none;">我是花吃</a><a
                             target="_blank"
-                            href="http://www.e3mall.cn/pinpai/7331-2696.html#sfbest_item_1600229585_brand_10"
+                            href="http://www.fiaojiashu.cn/pinpai/7331-2696.html#sfbest_item_1600229585_brand_10"
                             title="史努比 Snoopy" style="display: none;">史努比 Snoopy</a><a
                             target="_blank"
-                            href="http://www.e3mall.cn/pinpai/7331-3662.html#sfbest_item_1600229585_brand_11"
+                            href="http://www.fiaojiashu.cn/pinpai/7331-3662.html#sfbest_item_1600229585_brand_11"
                             title="郭元益" style="display: none;">郭元益</a><a target="_blank"
-                                                                         href="http://www.e3mall.cn/pinpai/7331-4986.html#sfbest_item_1600229585_brand_12"
+                                                                         href="http://www.fiaojiashu.cn/pinpai/7331-4986.html#sfbest_item_1600229585_brand_12"
                                                                          title="佳宁娜" style="display: none;">佳宁娜</a></li>
             </ul>
             <span class="clickShow"><b class="hide"></b></span>
@@ -2177,7 +2177,7 @@
                         <div class="p-img"><a target="_blank" href="#"><img
                                         src="/images/small_1800005691_1_1_1.jpg"></a></div>
                         <div class="title-a"><a target="_blank"
-                                                href="http://www.e3mall.cn/html/products/5/1800005691.html#trackref=sfbest_item_1600229585_buy1_1">归原Green
+                                                href="http://www.fiaojiashu.cn/html/products/5/1800005691.html#trackref=sfbest_item_1600229585_buy1_1">归原Green
                                 Yard 有机鲜牛奶 486ml</a></div>
                         <div class="title-b">【下单后3-5天发货】外包装更换中，请以实物为准</div>
                         <div class="p-price">￥20</div>
@@ -2193,7 +2193,7 @@
                         <div class="p-img"><a target="_blank" href="#"><img
                                         src="/images/small_1800005691_1_1_1.jpg"></a></div>
                         <div class="title-a"><a target="_blank"
-                                                href="http://www.e3mall.cn/html/products/5/1800005691.html#trackref=sfbest_item_1600229585_see_1">归原Green
+                                                href="http://www.fiaojiashu.cn/html/products/5/1800005691.html#trackref=sfbest_item_1600229585_see_1">归原Green
                                 Yard 有机鲜牛奶 486ml</a></div>
                         <div class="title-b">【下单后3-5天发货】外包装更换中，请以实物为准</div>
                         <div class="p-price">￥20</div>

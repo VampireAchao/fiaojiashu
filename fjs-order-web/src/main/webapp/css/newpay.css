@@ -20,7 +20,7 @@ body{text-algin:center;margin:0px;font-size:12px; font-family:Arial, Helvetica, 
 .oay_btns .pay_btn{ background:#fa9600; border:1px solid #fa9600; color:#fff;}
 .oay_btns .pay_btn:hover{ background:#fa6400; border:1px solid #fa6400;}
 .oay_btns .pay_btn1{ background:#fff; border:1px solid #e6e6e6; color:#646464;}
-.oay_btns .pay_btn1:hover{ background:#fff; border:1px solid #e6e6e6; color:#669900}
+.oay_btns .pay_btn1:hover{ background:#fff; border:1px solid #e6e6e6; color:#000000}
 .pay_main .pay_word2{ font-size:12px; height:18px; line-height:18px; padding:15px 0 0 40px;}
 .pay_main .pay_word2 em{ color:#fa6400;}
 .pay_main .pay_Rmoney{ width:210px; height:30px; line-height:30px; float:right; text-align:right; font-size:16px; padding-top:50px; overflow:hidden;}
@@ -64,7 +64,7 @@ body{text-algin:center;margin:0px;font-size:12px; font-family:Arial, Helvetica, 
 .pay_main .pay_tips span{ display:inline-block; float:left\9;}
 .pay_main .pay_tips .tip_l{ width:20px; height:18px; background:#fa6400; text-align:center; color:#fff;}
 .pay_main .pay_tips .tip_r{ padding-left:5px; color:#fa6400;}
-.pay_main .pay_more a{ padding-left:20px; height:36px; line-height:36px; color:#669900; font-size:12px; text-align:center; text-decoration:none;}
+.pay_main .pay_more a{ padding-left:20px; height:36px; line-height:36px; color:#000000; font-size:12px; text-align:center; text-decoration:none;}
 .pay_main .pay_more:hover{ text-decoration:underline;}
 .pay_more .pay_moreIcon, .pay_proMore .pay_moreIcon{ width:13px; height:10px; background:url(/images/pay/icon.png) left top no-repeat; display:inline-block; position:relative; top:2px; right:-2px;}
 .pay_proMore .pay_moreIcon{ background-position: -45px -19px;}
@@ -94,9 +94,9 @@ table { border-collapse:collapse; border-spacing:0; }
 .pay_proL img{ overflow:hidden; border:none;}
 .pay_product .pay_proR{ width:25%; *+position:absolute; *+top:0; *+right:0px; float:right; vertical-align:top; padding-top:30px; color:#969696; text-align:right; }
 .pay_table .pay_proMore{ position:absolute; bottom:20px; right:10px; height:18px; line-height:18px; font-size:12px; color:#333;}
-.pay_table .pay_proMore:hover{ color:#669900;}
+.pay_table .pay_proMore:hover{ color:#000000;}
 .pay_links{ padding:20px 10px 20px 56px; height:22px; line-height:22px;}
-.pay_links a{ display:inline-block; line-height:22px; padding-right:14px; color:#669900; text-decoration:none;}
+.pay_links a{ display:inline-block; line-height:22px; padding-right:14px; color:#000000; text-decoration:none;}
 .pay_links a:hover{ text-decoration:underline;}
 .pay_ment_color{ color:#ea5404;}
 
@@ -106,7 +106,7 @@ table { border-collapse:collapse; border-spacing:0; }
 .pay_ordWord span label, .pay_ordWord span em{ line-height:30px;}
 .pay_ordWord span em{ margin-left:10px; color:#fa6400; font-size:12px;}
 .pay_ordWord .pay_oW1{ padding-bottom:8px;}
-.pay_ordWord .pay_oW1 em{ color:#669900;}
+.pay_ordWord .pay_oW1 em{ color:#000000;}
 .pay_ordWord .pay_inp_time{ width:204px; height:18px; line-height:18px; border:1px solid #ddd; padding:5px 10px; margin:0 10px;}
 .pay_ordWord .pay_ordBtn{ cursor:pointer; line-height:18px; padding:5px 10px; border-radius:2px; border:none; background:#6bc30d; color:#fff;}
 .pay_ordWord .pay_ordBtn:hover{ background:#69af05;}
@@ -126,7 +126,7 @@ table { border-collapse:collapse; border-spacing:0; }
 .ui-dig-btn .ui-m{ margin-right:10px;}
 .ui-dig-btn .oBtn, .ui-dig-btn .oBtn1{ display:inline-block; cursor:pointer; border:none; outline:none; outline-style:none; bblr:expression(this.onFocus=this.blur()); padding:0 15px; text-align:center; }
 .ui-dig-btn .oBtn{  border:1px solid #e6e6e6; border-radius:2px; height:24px; line-height:24px; background:#fff; color:#646464;}
-.ui-dig-btn .oBtn:hover{ color:#669900; }
+.ui-dig-btn .oBtn:hover{ color:#000000; }
 .ui-dig-btn .oBtn1{ border-radius:2px; height:26px; line-height:26px; background:#6bc30d; color:#fff;}
 .ui-dig-btn .oBtn1:hover{ color:#fff; background:#6aaf04;}
 .ui-dig-p0{ text-align:left; padding:10px 30px 30px;}

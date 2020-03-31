@@ -64,7 +64,7 @@
 .bestbuy .bsmall li img{ width:235px; height:200px; border-right:1px solid #e8e8e8;}
 .bestbuy .bprice{position:absolute; top:70px; color:#FF4700; left:20px; font: bold 16px/18px Microsoft YaHei;}
 .bestbuy .bprice span{ font-size:12px;}
-.bbtn{position:absolute;width:160px;height:24px; border-radius:2px;background:#76ac25;filter:alpha(opacity=95);-moz-opacity:0.95;opacity:0.95;top:260px;cursor:pointer; margin-left:38px; left:0;}
+.bbtn{position:absolute;width:160px;height:24px; border-radius:2px;background:#000000;filter:alpha(opacity=95);-moz-opacity:0.95;opacity:0.95;top:260px;cursor:pointer; margin-left:38px; left:0;}
 .bbtn a{ width:60px; margin:0 auto;height:24px;display:block;background:url(../images/indexsprite.png) no-repeat -66px -177px;line-height:24px;font-family:Microsoft YaHei;font-size:12px;color:#fff;text-decoration:none; padding-left:20px;}
 .bbtn a:hover{text-decoration:none;}
 .rSide1{margin-top:26px;float:right; border:1px solid #E8E8E8;width:222px;height:459px;_height:459px;*margin-top:36px;_margin-top:39px; overflow:hidden;}
@@ -76,8 +76,8 @@
 .sfNews h2{ color:#323232;font-size:14px;font-family:Microsoft YaHei;float:left; font-weight:normal;}
 .sfNews .more{float:right;display:block;padding-top:2px;}
 .sfNews a.more{color:#969696;text-decoration:none;}
-.sfNews a.more:hover{color:#669900;}
-.sfNews a:hover{color:#669900;}
+.sfNews a.more:hover{color:#000000;}
+.sfNews a:hover{color:#000000;}
 .sfNews a.red:hover{ color:#fa6400; text-decoration:underline;}
 .sfNews li{line-height:26px;height:26px;overflow:hidden;}
 .sfNews ul{ margin:8px auto; height:104px;overflow:hidden;}
@@ -93,10 +93,10 @@
 .timedbuy .ttop .xiaqi{margin-top:-2px; width:111px; height:28px; background:url(../images/index_icon_new.png) no-repeat -205px -289px;}
 .timedbuy .ttop .tright{ float:right; width:100px; height:28px; text-align:center; font-size:16px; color:#666666; font-weight:bold; vertical-align:text-top; margin-right:10px; cursor:pointer;}
 .timedbuy .ttop .tright a{ margin-top:-6px;display:block;width:100px;background:url(../images/indexsprite.png) -90px -296px no-repeat;}
-.timedbuy .ttop .tright a:hover{color:#669900;display:block;width:100px;background:url(../images/indexsprite.png) -90px -239px no-repeat;}
+.timedbuy .ttop .tright a:hover{color:#000000;display:block;width:100px;background:url(../images/indexsprite.png) -90px -239px no-repeat;}
 .timedbuy .ttop .tright1{margin-top:-6px; float:right; width:100px; text-align:center; font-size:16px; font-weight:bold; cursor:pointer;}
 .timedbuy .ttop .tright1 a{color:#fa6400; display:block; text-decoration:none;width:100px; background:url(../images/indexsprite.png) -165px -270px no-repeat;}
-.timedbuy .ttop .tright1 a:hover{color:#669900; text-decoration:none;background:url(../images/indexsprite.png) -165px -209px no-repeat;}
+.timedbuy .ttop .tright1 a:hover{color:#000000; text-decoration:none;background:url(../images/indexsprite.png) -165px -209px no-repeat;}
 .timedbuy .ttop dd{ font-weight:bold; font-family:"宋体"; display:block; font-size:20px;color: #FFF; float:left; text-align:center;width:20px; height:28px;background:url(../images/indexsprite.png) no-repeat -83px -77px; margin:0 2px 0 0;}
 .timedbuy .ttop .no{color:#555555; background:#FFECBF;font-weight:bold;font-size:18px; font-family:"宋体"; margin:0; width:16px;}
 .timedbuy .tcenter{ background:#FFF;}
@@ -130,15 +130,15 @@
 a.fresh_f{cursor:pointer;}
 a.fresh_f:hover span{filter:alpha(opacity=80);-moz-opacity:0.8;opacity:0.8;} 
 .category{float:left;width:250px; overflow:hidden;}
-.sfRight{float:left;width:950px;position:relative; border-top:1px solid #adcd7c;}
+.sfRight{float:left;width:950px;position:relative; border-top:1px solid #ff0000;}
 .category .cir{ position:absolute; width:11px; height:11px;background:url(../images/index_icon_new.png) no-repeat -140px -68px;}
 .category .mTitle li{height:50px; line-height:50px;}
-.category .mTitle li:hover{ background:#83B933; color:#FFF;}
-.category .mTitle li:hover .cir{background:url(../images/index_icon_new.png) no-repeat -170px -68px;}
-.category .mTitle{ width:240px; height:50px; background:#76AC25; float:right;color:#FFF;}
+.category .mTitle li:hover{ background: #ff0000; color:#FFF;}
+.category .mTitle li:hover .cir{background-color: #ff0000;}
+.category .mTitle{ width:240px; height:50px; background:#000000; float:right;color:#FFF;}
 .category .mTitle a{color:#FFF;}
 .category .mTitle h2{ font-weight:normal; font-size:16px;/* margin:17px 0 0 0;*/ }
-.gBtn{position:absolute;width:160px;height:24px;border-radius:2px;background:#76ac25;filter:alpha(opacity=95);-moz-opacity:0.95;opacity:0.95;top:261px;cursor:pointer;z-index:4;}
+.gBtn{position:absolute;width:160px;height:24px;border-radius:2px;background:#000000;filter:alpha(opacity=95);-moz-opacity:0.95;opacity:0.95;top:261px;cursor:pointer;z-index:4;}
 .gBtn a{ margin:0 auto;width:60px;height:24px;display:block;background:url(../images/indexsprite.png) no-repeat -66px -177px;line-height:24px;font-family:Microsoft YaHei;font-size:12px;color:#fff;text-decoration:none;padding-left:20px;}
 .gBtn a:hover{text-decoration:none;}
 .outBtn{position:absolute;width:160px;height:24px;border-radius:2px;background:#969696;filter:alpha(opacity=95);-moz-opacity:0.95;opacity:0.95;top:261px;cursor:pointer;z-index:4;}
@@ -381,7 +381,7 @@ a.fresh_f:hover span{filter:alpha(opacity=80);-moz-opacity:0.8;opacity:0.8;}
 	color:#646464;
 }
 .zhiwei .info a:hover{
-	color:#669900;
+	color:#000000;
 }
 .zhiwei .info p{
 	background: url("../images/foot/dian.jpg") no-repeat scroll left center rgba(0, 0, 0, 0);
